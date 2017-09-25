@@ -22,7 +22,14 @@ h1 {
   font-family: "OpenSans", sans-serif;
   color: rgb(8, 75, 147);
   font-weight: bold;
-  line-height: 0.78;
+  text-align: center;
+}
+
+h2 {
+  font-size: 35px;
+  font-family: "OpenSans", sans-serif;
+  color: rgb(17, 17, 17);
+  font-weight: bold;
   text-align: center;
 }
 
@@ -40,12 +47,12 @@ ul {
   font-size: 35px;
   font-family: "OpenSans", sans-serif;
   color: rgb(8, 75, 147);
-  line-height: 0.78;
   text-align: center;
 }
 
 .header {
   background: url("../../img/img-bg-header.png");
+  padding-bottom: 35px;
 }
 
 .header-top {
@@ -62,7 +69,6 @@ ul {
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
-    line-height: 3.333;
     text-align: center;
     display: block;
     padding: 18px;
@@ -75,7 +81,6 @@ ul {
     font-family: "OpenSans", sans-serif;
     color: rgb(8, 75, 147);
     font-weight: bold;
-    line-height: 3;
     text-align: center;
     display: block;
   }
@@ -83,7 +88,6 @@ ul {
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
-    line-height: 4.286;
     text-align: center;
     display: block;
   }
@@ -92,7 +96,6 @@ ul {
     font-family: "Open Sans", sans-serif;
     color: rgb(255, 173, 23);
     text-decoration: underline;
-    line-height: 3.333;
     text-align: center;
     display: block;
   }
@@ -109,7 +112,6 @@ ul {
       font-size: 16px;
       font-family: "Open Sans", sans-serif;
       color: rgb(17, 17, 17);
-      line-height: 1.25;
       font-weight: 700;
       width: 210px;
       margin-left: 30px;
@@ -122,19 +124,43 @@ ul {
   margin: 0 auto;
   background-color: #fff;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.27);
-  padding: 30px 40px;
   &__name {
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
     font-weight: 700;
-    line-height: 1.667;
   }
   &__top {
     display: flex;
+    padding: 30px 40px 10px;
+  }
+  &__bottom {
+    background-color: #084b93;
+    padding: 10px 40px 30px;
   }
   &__left, &__right {
     width: 50%;
+  }
+  & input {
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+  }
+  & input[placeholder] {
+    font-size: 16px;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(89, 89, 89);
+  }
+  & input[type="submit"] {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(254, 254, 254);
+    text-align: center;
+    background-color: rgb(255, 46, 38);
+    border-radius: 50px;
+    box-shadow: 0 5px 0 0 #ac201b;
   }
 }
 
@@ -146,7 +172,6 @@ ul {
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
-    line-height: 2.063;
   }
   &__input {
     display: none;
@@ -173,5 +198,45 @@ ul {
         }
       }
     }
+  }
+}
+
+.advantages {
+  padding: 75px 0 65px;
+  &__item {
+    text-align: center;
+    padding: 25px 0;
+  }
+  &__icon {
+    height: 138px;
+    display: flex;
+    align-items: center;
+  }
+  & p {
+    font-size: 16px;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(17, 17, 17);
+    line-height: 1.25;
+    text-align: left;
+    margin: 12px 0;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: #ffad17;
+      border-radius: 50%;
+      position: absolute;
+      left: -18px;
+      top: 5px;
+    }
+  }
+  & span {
+    font-size: 20px;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(17, 17, 17);
+    font-weight: bold;
+    text-align: center;
   }
 }
