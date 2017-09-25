@@ -17,6 +17,15 @@ h1, h2, h3 {
   margin: 0;
 }
 
+h1 {
+  font-size: 50px;
+  font-family: "OpenSans", sans-serif;
+  color: rgb(8, 75, 147);
+  font-weight: bold;
+  line-height: 0.78;
+  text-align: center;
+}
+
 a {
   text-decoration: none;
 }
@@ -27,23 +36,36 @@ ul {
   padding: 0;
 }
 
+.subtitle {
+  font-size: 35px;
+  font-family: "OpenSans", sans-serif;
+  color: rgb(8, 75, 147);
+  line-height: 0.78;
+  text-align: center;
+}
+
 .header {
   background: url("../../img/img-bg-header.png");
-  &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-nav {
-  &
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
   &__link {
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
     line-height: 3.333;
     text-align: center;
+    display: block;
+    padding: 18px;
   }
 }
 
@@ -55,6 +77,7 @@ ul {
     font-weight: bold;
     line-height: 3;
     text-align: center;
+    display: block;
   }
   &__span {
     font-size: 14px;
@@ -62,6 +85,7 @@ ul {
     color: rgb(17, 17, 17);
     line-height: 4.286;
     text-align: center;
+    display: block;
   }
   &__feedback {
     font-size: 18px;
@@ -70,6 +94,84 @@ ul {
     text-decoration: underline;
     line-height: 3.333;
     text-align: center;
+    display: block;
+  }
+}
 
+.header-main {
+  &__items {
+    padding: 30px 0;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    & p {
+      font-size: 16px;
+      font-family: "Open Sans", sans-serif;
+      color: rgb(17, 17, 17);
+      line-height: 1.25;
+      font-weight: 700;
+      width: 210px;
+      margin-left: 30px;
+    }
+  }
+}
+
+.header-calculator {
+  width: 490px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.27);
+  padding: 30px 40px;
+  &__name {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(17, 17, 17);
+    font-weight: 700;
+    line-height: 1.667;
+  }
+  &__top {
+    display: flex;
+  }
+  &__left, &__right {
+    width: 50%;
+  }
+}
+
+.radios {
+  &__label {
+    display: flex;
+  }
+  &__name {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(17, 17, 17);
+    line-height: 2.063;
+  }
+  &__input {
+    display: none;
+  }
+  &__input-custom {
+    width: 28px;
+    height: 28px;
+    position: relative;
+    background: url("../../img/icon-radio.png") no-repeat;
+    margin-right: 20px;
+  }
+  &__input:checked {
+    & + .radios {
+      &__input-custom {
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          top: 6px;
+          left: 6px;
+          background: url("../../img/icon-radio-checked.png") no-repeat;
+        }
+      }
+    }
   }
 }
