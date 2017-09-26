@@ -248,3 +248,163 @@ ul {
     }
   }
 }
+
+.rates {
+  padding: 80px 0 70px;
+  background-color: #084b92;
+  & h2 {
+    color: #fff;
+  }
+}
+
+.tabs {
+  &__content {
+    display: none;
+    &_active {
+      display: block;
+    }
+  }
+  &__items {
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+  }
+  &__item {
+    font-size: 16px;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(254, 254, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 20px;
+    &_active {
+      display: block;
+      border-bottom: 3px solid #fff;
+    }
+  }
+  &__btn {
+    text-align: center;
+    padding: 20px 0;
+  }
+}
+
+.tabs-block {
+  background-color: rgb(244, 243, 243);
+  padding: 30px;
+  height: 628px;
+  &__title {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(17, 17, 17);
+    text-align: center;
+    font-weight: 700;
+  }
+  & p {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(17, 17, 17);
+    background: url("../../img/icon-true.png") no-repeat;
+    padding: 0 110px 0 55px;
+    margin: 10px 0;
+  }
+  &_primary {
+    background-color: #fff;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, .17);
+    z-index: 1;
+    position: relative;
+    top: -18px;
+    height: 661px;
+    & .tabs-block {
+      &__title {
+        font-size: 24px;
+      }
+    }
+    & .tabs-price {
+      display: block;
+      &__old {
+        color: rgb(17, 17, 17);
+      }
+      &__new {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+.tabs-list {
+  margin: 10px 0;
+  &__name {
+    font-size: 14px;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(17, 17, 17);
+    font-weight: bold;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: #ffad17;
+      border-radius: 50%;
+      position: absolute;
+      top: 4px;
+      left: -16px;
+    }
+  }
+  &__item {
+    font-size: 14px;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(17, 17, 17);
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.tabs-price {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  &__old {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: #6c6c6c;
+  }
+  &__old-value {
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #fe3131;
+      position: absolute;
+      left: 0;
+      top: 13px;
+    }
+  }
+  &__new {
+    font-size: 24px;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(17, 17, 17);
+    font-weight: bold;
+    text-align: center;
+    display: block;
+  }
+}
+
+.btn {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #fefefe;
+  text-align: center;
+  background-color: #ff2e26;
+  border-radius: 50px;
+  box-shadow: 0 5px 0 0 #ac201b;
+  padding: 14px;
+  display: inline-block;
+}
