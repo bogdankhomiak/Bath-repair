@@ -416,6 +416,93 @@ ul {
   display: inline-block;
 }
 
+.portfolio {
+  padding: 70px 0 70px;
+  & .tabs {
+    &__items {
+      background-color: #084b93;
+      margin: 60px 0 0;
+    }
+    &__item {
+      font-size: 18px;
+      font-family: "OpenSans", sans-serif;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      text-align: center;
+      padding: 25px 35px;
+      text-transform: none;
+      margin: 0;
+      &_active {
+        background-color: #0368d6;
+        border-bottom-color: #8fc5ff;
+      }
+    }
+  }
+  &__head {
+    padding: 20px 40px;
+  }
+  &__name {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(17, 17, 17);
+    display: block;
+    position: relative;
+  }
+  &__subname {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(17, 17, 17);
+    display: block;
+  }
+  &__item {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(17, 17, 17);
+    display: flex;
+  }
+  &__bottom {
+    background-color: #f4f3f3;
+    padding: 20px 40px;
+    & .portfolio {
+      &__name {
+        &:after {
+          content: '';
+          display: block;
+          width: 19px;
+          height: 11px;
+          background: url("../../img/icon-arrow-down.png") no-repeat;
+          position: absolute;
+          right: 39px;
+          top: 8px;
+        }
+      }
+    }
+  }
+  &__link {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(17, 17, 17);
+    display: block;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      width: 11px;
+      height: 19px;
+      background: url("../../img/icon-arrow-right.png") no-repeat;
+      position: absolute;
+      right: 39px;
+      top: 4px;
+    }
+  }
+}
+
+.slider {
+  &__img {
+    width: 100%;
+  }
+}
+
 .features {
   background: #fff url("../../img/img-bg-features.png");
   & .list {
@@ -449,8 +536,8 @@ ul {
           right: 0;
           left: auto;
         }
-        &__descr{
-          padding:20px 350px 20px 30px;
+        &__descr {
+          padding: 20px 350px 20px 30px;
         }
       }
     }
