@@ -33,6 +33,13 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-size: 30px;
+  font-family: "OpenSans", sans-serif;
+  color: rgb(17, 17, 17);
+  font-weight: bold;
+}
+
 a {
   text-decoration: none;
 }
@@ -249,7 +256,7 @@ ul {
   }
 }
 
-.rates {
+.price {
   padding: 80px 0 70px;
   background-color: #084b92;
   & h2 {
@@ -332,7 +339,7 @@ ul {
   }
 }
 
-.tabs-list {
+.list {
   margin: 10px 0;
   &__name {
     font-size: 14px;
@@ -407,4 +414,82 @@ ul {
   box-shadow: 0 5px 0 0 #ac201b;
   padding: 14px;
   display: inline-block;
+}
+
+.features {
+  background: #fff url("../../img/img-bg-features.png");
+  & .list {
+    &__item {
+      position: relative;
+      &:before {
+        content: '';
+        display: block;
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background-color: #ffad17;
+        position: absolute;
+        top: 4px;
+        left: -16px;
+      }
+    }
+    &__item {
+      font-size: 16px;
+    }
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 160px;
+    &_right {
+      justify-content: flex-start;
+      & .features {
+        &__img {
+          right: 0;
+          left: auto;
+        }
+        &__descr{
+          padding:20px 350px 20px 30px;
+        }
+      }
+    }
+  }
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 31px;
+    box-shadow: -14.923px 10.065px 27px 0 rgba(0, 0, 0, 0.23);
+  }
+  &__descr {
+    width: 80%;
+    border: 4px solid #ffad17;
+    padding: 20px 10px 20px 350px;
+    height: 470px;
+  }
+}
+
+.sale {
+  padding: 80px 0 70px;
+  background-color: #084b92;
+  & h2 {
+    color: #fff;
+  }
+  &__subtitle {
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+  }
+  &__name {
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(255, 255, 255);
+  }
+  &__txt {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(255, 255, 255);
+  }
 }
