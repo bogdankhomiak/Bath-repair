@@ -505,6 +505,7 @@ ul {
 
 .features {
   background: #fff url("../../img/img-bg-features.png");
+  padding: 70px 0;
   & .list {
     &__item {
       position: relative;
@@ -623,6 +624,71 @@ ul {
   }
 }
 
+.technology {
+  background: #fff url("../../img/img-bg-features.png");
+  padding: 70px 0;
+  & .list {
+    &__name {
+      &:before {
+        display: none;
+      }
+    }
+    &__item {
+      position: relative;
+      &:before {
+        content: '';
+        display: block;
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background-color: #ffad17;
+        position: absolute;
+        top: 4px;
+        left: -16px;
+      }
+    }
+    &__item {
+      font-size: 16px;
+    }
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 160px;
+    &_right {
+      justify-content: flex-start;
+      & .features {
+        &__img {
+          right: 0;
+          left: auto;
+        }
+        &__descr {
+          padding: 20px 350px 20px 30px;
+        }
+      }
+    }
+  }
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 31px;
+    box-shadow: -14.923px 10.065px 27px 0 rgba(0, 0, 0, 0.23);
+    &:before {
+      border: 4px solid #ffad17;
+      display: block;
+      content: '';
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &__descr {
+    width: 80%;
+    padding: 20px 10px 20px 350px;
+    height: 470px;
+  }
+}
+
 .sale {
   padding: 80px 0 70px;
   background-color: #084b92;
@@ -673,5 +739,67 @@ ul {
     color: rgb(17, 17, 17);
     padding-right: 25px;
     text-align: left;
+  }
+}
+
+.contacts {
+  display: flex;
+  &__descr {
+    width: 50%;
+    padding: 70px 75px;
+    & h2 {
+      text-align: left;
+    }
+  }
+  &__item {
+    font-size: 18px;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(17, 17, 17);
+    display: flex;
+  }
+  &__span {
+    font-size: 16px;
+    font-family: "OpenSans", sans-serif;
+    color: #616060;
+    display: block;
+  }
+  &__tel {
+    font-size: 24px;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(17, 17, 17);
+    font-weight: bold;
+    padding-left: 20px;
+  }
+  &__mail {
+    font-size: 18px;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(17, 17, 17);
+    font-weight: 700;
+    padding-left: 20px;
+  }
+  &__txt {
+    padding-left: 20px;
+  }
+}
+
+.map {
+  width: 50%;
+}
+
+.footer {
+  background-color: #084b92;
+  padding: 50px 0;
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+  & p {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(254, 252, 252);
+  }
+  &__link {
+    text-decoration: underline;
+    color: #fff;
   }
 }
