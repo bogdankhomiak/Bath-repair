@@ -556,6 +556,73 @@ ul {
   }
 }
 
+.warm-flor {
+  background: #fff url("../../img/img-bg-warm-floor-1.png");
+  background-size: cover;
+  padding: 70px 0;
+  &__head {
+    & p {
+      font-size: 18px;
+      font-family: "Open Sans", sans-serif;
+      color: rgb(17, 17, 17);
+    }
+  }
+  &__guarantee {
+    font-size: 18px;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(17, 17, 17);
+    font-weight: bold;
+    padding-left: 50px;
+    background: url("../../img/icon-guarantee-orange.png") no-repeat;
+  }
+  &__feadback {
+    background-color: #fff;
+    padding: 30px 25px;
+    border-radius: 5px;
+    & p {
+      font-size: 18px;
+      font-family: "Open Sans", sans-serif;
+      color: rgb(17, 17, 17);
+    }
+  }
+  & input {
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid #d1d1d1;
+    margin-bottom: 10px;
+  }
+  & input[type=submit] {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: #fefefe;
+    text-align: center;
+    background-color: #ff2e26;
+    border-radius: 50px;
+    box-shadow: 0 5px 0 0 #ac201b;
+    border: none;
+  }
+  &_second {
+    background: url(../../img/img-bg-warm-floor-2.png) #074e99 no-repeat;
+    background-size: contain;
+  }
+}
+
+.countdown {
+  display: flex;
+  &__item {
+    display: flex;
+    align-items: baseline;
+  }
+  &__number {
+    font-size: 36px;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(17, 17, 17);
+    font-weight: bold;
+  }
+}
+
 .sale {
   padding: 80px 0 70px;
   background-color: #084b92;
@@ -578,5 +645,33 @@ ul {
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
     color: rgb(255, 255, 255);
+  }
+}
+
+.catalog {
+  padding: 70px 0;
+  background-color: #ffffff;
+  &__item {
+    background-color: #fff;
+    box-shadow: 2.472px 7.608px 24px 0 rgba(49, 49, 49, 0.16);
+    padding: 20px;
+    text-align: center;
+    margin: 30px 0;
+    height: 370px;
+  }
+  &__name {
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(17, 17, 17);
+    font-weight: 700;
+    display: block;
+    text-align: left;
+  }
+  & p {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(17, 17, 17);
+    padding-right: 25px;
+    text-align: left;
   }
 }
