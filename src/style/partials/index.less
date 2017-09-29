@@ -19,7 +19,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: 50px;
-  font-family: "OpenSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: rgb(8, 75, 147);
   font-weight: bold;
   text-align: center;
@@ -27,7 +27,7 @@ h1 {
 
 h2 {
   font-size: 35px;
-  font-family: "OpenSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: rgb(17, 17, 17);
   font-weight: bold;
   text-align: center;
@@ -35,7 +35,7 @@ h2 {
 
 h3 {
   font-size: 30px;
-  font-family: "OpenSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: rgb(17, 17, 17);
   font-weight: bold;
 }
@@ -52,24 +52,35 @@ ul {
 
 .subtitle {
   font-size: 35px;
-  font-family: "OpenSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: rgb(8, 75, 147);
   text-align: center;
   display: block;
+  line-height: 16px;
 }
 
 .header {
   background: #e1e1e1 url("../img/img-bg-header.png") no-repeat;
-  padding-bottom: 35px;
+  padding-bottom: 37px;
   background-size: cover;
 }
 
 .header-top {
+  padding-top: 11px;
   display: flex;
   justify-content: space-between;
 }
 
+.logotype {
+  &__link {
+    display: block;
+    margin-left: 25px;
+  }
+}
+
 .header-nav {
+  margin-left: 45px;
+  margin-top: 8px;
   &__items {
     display: flex;
     justify-content: space-between;
@@ -80,18 +91,31 @@ ul {
     color: rgb(17, 17, 17);
     text-align: center;
     display: block;
-    padding: 18px;
+    padding: 19px;
   }
 }
 
 .header-contacts {
+  padding: 11px 7px 0 0;
+  line-height: 23px;
   &__tel {
     font-size: 20px;
-    font-family: "OpenSans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: rgb(8, 75, 147);
     font-weight: bold;
     text-align: center;
     display: block;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      background: url("../img/icon-phone.png") no-repeat;
+      width: 22px;
+      height: 21px;
+      position: absolute;
+      left: -23px;
+      top: 0;
+    }
   }
   &__span {
     font-size: 14px;
@@ -111,8 +135,9 @@ ul {
 }
 
 .header-main {
+  padding-top: 32px;
   &__items {
-    padding: 30px 0;
+    padding: 50px 0 30px;
   }
   &__item {
     display: flex;
@@ -121,9 +146,10 @@ ul {
       font-size: 16px;
       font-family: "Open Sans", sans-serif;
       color: rgb(17, 17, 17);
-      font-weight: 700;
-      width: 210px;
-      margin-left: 30px;
+      font-weight: 600;
+      width: 250px;
+      margin-left: 34px;
+      line-height: 21px;
     }
   }
 }
@@ -137,29 +163,28 @@ ul {
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
-    font-weight: 700;
+    font-weight: 600;
   }
   &__top {
     display: flex;
-    padding: 30px 40px 10px;
+    padding: 26px 34px 0 44px;
+    justify-content: space-between;
   }
   &__bottom {
     background-color: #084b93;
-    padding: 10px 40px 30px;
-  }
-  &__left, &__right {
-    width: 50%;
+    padding: 19px 25px 24px 37px;
   }
   & input {
     width: 100%;
-    padding: 20px 30px;
+    padding: 19px 30px;
     border-radius: 5px;
     border: none;
     margin-bottom: 10px;
+    letter-spacing: -0.35px;
   }
   & input[placeholder] {
     font-size: 16px;
-    font-family: "OpenSans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: rgb(89, 89, 89);
   }
   & input[type="submit"] {
@@ -170,12 +195,16 @@ ul {
     background-color: rgb(255, 46, 38);
     border-radius: 50px;
     box-shadow: 0 5px 0 0 #ac201b;
+    padding: 14px 20px 19px;
+    letter-spacing: 0.4px;
   }
 }
 
 .radios {
+  margin-top: 13px;
   &__label {
     display: flex;
+    padding-bottom: 5px;
   }
   &__name {
     font-size: 16px;
@@ -190,7 +219,7 @@ ul {
     height: 28px;
     position: relative;
     background: url("../img/icon-radio.png") no-repeat;
-    margin-right: 20px;
+    margin-right: 27px;
   }
   &__input:checked {
     & + .radios {
@@ -210,24 +239,36 @@ ul {
   }
 }
 
+.range-slider {
+  & p {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(17, 17, 17);
+    text-align: center;
+    font-weight: 600;
+    padding: 7px 0 0 69px;
+  }
+}
+
 .advantages {
-  padding: 75px 0 65px;
+  padding: 58px 0 67px;
   background: #fff;
   &__item {
-    text-align: center;
-    padding: 25px 0;
+    padding: 45px 0 11px;
   }
   &__icon {
     height: 138px;
     display: flex;
-    align-items: center;
-
   }
   & span {
     font-size: 20px;
-    font-family: "OpenSans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
     font-weight: bold;
+    letter-spacing: -0.1px;
+    display: block;
+    margin-bottom: 12px;
+    margin-top: 14px;
     text-align: center;
   }
 }
@@ -236,12 +277,14 @@ ul {
   height: 250px;
   & p {
     font-size: 16px;
-    font-family: "OpenSans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
     line-height: 1.25;
     text-align: left;
-    margin: 12px 0;
+    margin-bottom: 20px;
     position: relative;
+    padding-left: 15px;
+    letter-spacing: -0.35px;
     &:before {
       content: '';
       display: block;
@@ -250,14 +293,14 @@ ul {
       background-color: #ffad17;
       border-radius: 50%;
       position: absolute;
-      left: -18px;
+      left: -4px;
       top: 5px;
     }
   }
 }
 
 .price {
-  padding: 80px 0 70px;
+  padding: 68px 0 70px;
   background-color: #084b92;
   & h2 {
     color: #fff;
@@ -274,46 +317,50 @@ ul {
   &__items {
     display: flex;
     justify-content: center;
-    margin: 60px;
+    margin: 43px 0 66px
   }
   &__item {
     font-size: 16px;
-    font-family: "OpenSans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: rgb(254, 254, 255);
-    font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
-    margin: 0 20px;
+    margin: 0 19px;
     &_active {
       display: block;
       border-bottom: 3px solid #fff;
+      font-weight: bold;
     }
   }
   &__btn {
     text-align: center;
-    padding: 20px 0;
+    padding-top: 11px;
   }
 }
 
 .tabs-block {
   background-color: rgb(244, 243, 243);
   padding: 30px;
+  //padding: 25px 30px 30px 39px;
   height: 628px;
+  &__descr {
+    padding: 26px 0 0 7px;
+  }
   &__title {
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
   }
   & p {
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
-    background: url("../img/icon-true.png") no-repeat;
-    padding: 0 110px 0 55px;
-    margin: 10px 0;
+    background: url(../img/icon-true.png) no-repeat 0 50%;
+    padding: 0 110px 0 50px;
+    margin: 15px 0 21px;
   }
   &_primary {
     background-color: #fff;
@@ -325,12 +372,19 @@ ul {
     & .tabs-block {
       &__title {
         font-size: 24px;
+        font-weight: 600;
+        display: block;
+        text-align: left;
+        margin-bottom: 16px;
       }
     }
     & .tabs-price {
       display: block;
       &__old {
         color: rgb(17, 17, 17);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
       }
       &__new {
         font-size: 36px;
@@ -340,13 +394,14 @@ ul {
 }
 
 .list {
-  margin: 10px 0;
+  margin-bottom: 16px;
   &__name {
     font-size: 14px;
-    font-family: "OpenSans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
     font-weight: bold;
     position: relative;
+    letter-spacing: 0.3px;
     &:before {
       content: '';
       display: block;
@@ -361,12 +416,14 @@ ul {
   }
   &__item {
     font-size: 14px;
-    font-family: "OpenSans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
+    line-height: 18px;
   }
   &__icons {
     display: flex;
     align-items: center;
+    margin: 8px 0px;
   }
 }
 
@@ -374,6 +431,8 @@ ul {
   text-align: center;
   display: flex;
   justify-content: space-around;
+  margin-top: 32px;
+  align-items: center;
   &__old {
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
@@ -381,7 +440,7 @@ ul {
   }
   &__old-value {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     position: relative;
     &:before {
       content: '';
@@ -396,7 +455,7 @@ ul {
   }
   &__new {
     font-size: 24px;
-    font-family: "OpenSans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
     font-weight: bold;
     text-align: center;
@@ -412,34 +471,36 @@ ul {
   background-color: #ff2e26;
   border-radius: 50px;
   box-shadow: 0 5px 0 0 #ac201b;
-  padding: 14px;
+  padding: 17px 27px;
   display: inline-block;
+  font-weight: bold;
 }
 
 .portfolio {
-  padding: 70px 0 70px;
+  padding: 57px 0 57px;
   & .tabs {
     &__items {
       background-color: #084b93;
-      margin: 60px 0 0;
+      margin: 37px 0 0;
     }
     &__item {
       font-size: 18px;
-      font-family: "OpenSans", sans-serif;
+      font-family: "Open Sans", sans-serif;
       color: rgb(255, 255, 255);
-      font-weight: bold;
       text-align: center;
-      padding: 25px 35px;
+      padding: 20px 31px;
       text-transform: none;
       margin: 0;
       &_active {
         background-color: #0368d6;
         border-bottom-color: #8fc5ff;
+        font-weight: bold;
       }
     }
   }
   &__head {
-    padding: 20px 40px;
+    padding: 15px 24px;
+    letter-spacing: 0.35px;
   }
   &__name {
     font-size: 18px;
@@ -582,7 +643,7 @@ ul {
   }
   &__caption {
     font-size: 16px;
-    font-family: "OpenSans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: rgb(0, 0, 0);
     font-weight: bold;
     display: inline-block;
@@ -595,7 +656,7 @@ ul {
 .master-list {
   &__caption {
     font-size: 22px;
-    font-family: "OpenSans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: rgb(0, 0, 0);
     font-weight: bold;
   }
@@ -638,7 +699,7 @@ ul {
   }
   &__guarantee {
     font-size: 18px;
-    font-family: "OpenSans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
     font-weight: bold;
     padding-left: 50px;
@@ -686,7 +747,7 @@ ul {
   }
   &__number {
     font-size: 36px;
-    font-family: "OpenSans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
     font-weight: bold;
   }
@@ -797,7 +858,7 @@ ul {
     font-size: 24px;
     font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
-    font-weight: 700;
+    font-weight: 600;
     display: block;
     text-align: left;
   }
@@ -883,28 +944,28 @@ ul {
   }
   &__item {
     font-size: 18px;
-    font-family: "OpenSans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
     display: flex;
   }
   &__span {
     font-size: 16px;
-    font-family: "OpenSans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: #616060;
     display: block;
   }
   &__tel {
     font-size: 24px;
-    font-family: "OpenSans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
     font-weight: bold;
     padding-left: 20px;
   }
   &__mail {
     font-size: 18px;
-    font-family: "OpenSans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
-    font-weight: 700;
+    font-weight: 600;
     padding-left: 20px;
   }
   &__txt {

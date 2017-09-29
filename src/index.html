@@ -15,7 +15,7 @@
         <div class="header-top">
             <div class="logotype">
                 <a href="#" class="logotype__link">
-                    <img src="img/img-logo.png" alt="logotupe" class="logotype__img">
+                    <img src="img/img-logo.png" alt="logotype" class="logotype__img">
                 </a>
             </div>
             <nav class="header-nav">
@@ -29,7 +29,7 @@
             <div class="header-contacts">
                 <a href="tel:+74951276018" class="header-contacts__tel">+7 (495) 127-60-18 </a>
                 <span class="header-contacts__span">Ежедневно с 08:00 до 22:00</span>
-                <a href="tel:+74951276018" class="header-contacts__feedback">+7 (495) 127-60-18 </a>
+                <a href="tel:+74951276018" class="header-contacts__feedback">Заказать звонок</a>
             </div>
         </div>
         <div class="header-main">
@@ -124,6 +124,7 @@
                     </div>
                 </div>
                 <div class="range-slider clearfix">
+                    <p>Площадь квартиры</p>
                     <input type="text" id="rangeSlider" name="range-slider" title="range">
                 </div>
                 <div class="header-calculator__bottom">
@@ -141,7 +142,7 @@
     <div class="container">
         <div class="row">
             <h2>Наши преимущества</h2>
-            <div class="advantages__items">
+            <div class="advantages__items clearfix">
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <div class="advantages__item">
                         <div class="advantages__icon">
@@ -291,10 +292,12 @@
                         <div class="row">
                             <div class="tabs-block">
                                 <img src="img/img-kitchen.png" alt="kitchen" class="tabs-block__img">
-                                <span class="tabs-block__title">Всем клиентам бесплатно</span>
-                                <p>Вывоз мусора и влажная уборка</p>
-                                <span class="tabs-block__title">При заказе от 150 000 р. </span>
-                                <p>Скидка 10% или дизайн проект в подарок</p>
+                                <div class="tabs-block__descr">
+                                    <span class="tabs-block__title">Всем клиентам бесплатно</span>
+                                    <p>Вывоз мусора и влажная уборка</p>
+                                    <span class="tabs-block__title">При заказе от 150 000 р. </span>
+                                    <p>Скидка 10% или дизайн проект в подарок</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -320,7 +323,7 @@
                                 <div class="list">
                                     <span class="list__name">Ванная</span>
                                     <ul class="list__items">
-                                        <li class="list__item">- Демонтаж старой отделки</li>
+                                        <li class="list__item">- Замена сантехники</li>
                                         <li class="list__item">- Укладка плитки на пол в санузле</li>
                                         <li class="list__item">- Облицовка стен панелями в санузле</li>
                                         <li class="list__item">- Установка реечного потолка в санузле</li>
@@ -336,12 +339,13 @@
                                 <div class="list">
                                     <span class="list__name">Электрика</span>
                                     <ul class="list__items">
-                                        <li class="list__item">- Замена розеток, выключателей и светильников</li>
+                                        <li class="list__item">- Замена розеток, выключателей и светильни</li>
                                         <li class="list__item">- Установка электрощита и автоматов</li>
                                     </ul>
                                 </div>
                                 <div class="tabs-price">
-                                    <span class="tabs-price__old">Старая цена
+                                    <span class="tabs-price__old">
+                                        <span class="tabs-price__old-txt">Старая цена</span>
                                         <span class="tabs-price__old-value">3 245 руб./м<sup>2</sup></span>
                                     </span>
                                     <span class="tabs-price__new">от 20 950 руб./м<sup>2</sup></span>
@@ -355,48 +359,50 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <div class="row">
                             <div class="tabs-block">
-                                <div class="list">
-                                    <span class="tabs-block__title">Чистовые материалы </span>
-                                    <div class="list__icons">
-                                        <div class="icon icon__finishing-materials-1"></div>
-                                        <div class="icon icon__finishing-materials-2"></div>
-                                        <div class="icon icon__finishing-materials-3"></div>
-                                    </div>
-                                    <ul class="list__items">
-                                        <li class="list__item">- Реечный и натяжной потолок</li>
-                                        <li class="list__item">- Теплозвукоизоляционные материалы</li>
-                                        <li class="list__item">- Обои</li>
-                                        <li class="list__item">- Паркетная доска</li>
-                                        <li class="list__item">- Настенная и напольная плитка</li>
-                                        <li class="list__item">- Межкомнатные двери</li>
-                                    </ul>
-                                    <div class="tabs-price">
+                                <div class="tabs-block__box">
+                                    <div class="list">
+                                        <span class="tabs-block__title">Чистовые материалы </span>
+                                        <div class="list__icons">
+                                            <div class="icon icon__finishing-materials-1"></div>
+                                            <div class="icon icon__finishing-materials-2"></div>
+                                            <div class="icon icon__finishing-materials-3"></div>
+                                        </div>
+                                        <ul class="list__items">
+                                            <li class="list__item">- Реечный и натяжной потолок</li>
+                                            <li class="list__item">- Теплозвукоизоляционные материалы</li>
+                                            <li class="list__item">- Обои</li>
+                                            <li class="list__item">- Паркетная доска</li>
+                                            <li class="list__item">- Настенная и напольная плитка</li>
+                                            <li class="list__item">- Межкомнатные двери</li>
+                                        </ul>
+                                        <div class="tabs-price">
                                     <span class="tabs-price__old">
                                         <span class="tabs-price__old-value">1 650 руб./м<sup>2</sup></span>
                                     </span>
-                                        <span class="tabs-price__new">1 500 руб./м<sup>2</sup></span>
+                                            <span class="tabs-price__new">1 500 руб./м<sup>2</sup></span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="list">
-                                    <span class="tabs-block__title">Черновые материалы</span>
-                                    <div class="list__icons">
-                                        <div class="icon icon__rough-materials-1"></div>
-                                        <div class="icon icon__rough-materials-2"></div>
-                                        <div class="icon icon__rough-materials-3"></div>
-                                    </div>
-                                    <ul class="list__items">
-                                        <li class="list__item">- Реечный и натяжной потолок</li>
-                                        <li class="list__item">- Теплозвукоизоляционные материалы</li>
-                                        <li class="list__item">- Обои</li>
-                                        <li class="list__item">- Паркетная доска</li>
-                                        <li class="list__item">- Настенная и напольная плитка</li>
-                                        <li class="list__item">- Межкомнатные двери</li>
-                                    </ul>
-                                    <div class="tabs-price">
+                                    <div class="list">
+                                        <span class="tabs-block__title">Черновые материалы</span>
+                                        <div class="list__icons">
+                                            <div class="icon icon__rough-materials-1"></div>
+                                            <div class="icon icon__rough-materials-2"></div>
+                                            <div class="icon icon__rough-materials-3"></div>
+                                        </div>
+                                        <ul class="list__items">
+                                            <li class="list__item">- Реечный и натяжной потолок</li>
+                                            <li class="list__item">- Теплозвукоизоляционные материалы</li>
+                                            <li class="list__item">- Обои</li>
+                                            <li class="list__item">- Паркетная доска</li>
+                                            <li class="list__item">- Настенная и напольная плитка</li>
+                                            <li class="list__item">- Межкомнатные двери</li>
+                                        </ul>
+                                        <div class="tabs-price">
                                     <span class="tabs-price__old">
                                         <span class="tabs-price__old-value">715 руб./м<sup>2</sup></span>
                                     </span>
-                                        <span class="tabs-price__new">650 руб./м<sup>2</sup></span>
+                                            <span class="tabs-price__new">650 руб./м<sup>2</sup></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -422,7 +428,7 @@
             <h2>Выполненные работы</h2>
             <div class="tabs">
                 <ul class="tabs__items">
-                    <li class="tabs__item tabs__item_active">3 метров</li>
+                    <li class="tabs__item tabs__item_active">3 метра</li>
                     <li class="tabs__item">5 метров</li>
                     <li class="tabs__item">7 метров</li>
                     <li class="tabs__item">10 метров</li>
