@@ -23,7 +23,12 @@ $(document).ready(function () {
     $(function () {
         $(".slider-js-1").owlCarousel({
             items: 1,
-            nav: true,
+            //nav: true,
+            dots: true
+        });
+        $(".slider-js-2").owlCarousel({
+            items: 1,
+            //nav: true,
             dots: true
         });
     });

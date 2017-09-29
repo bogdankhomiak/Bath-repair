@@ -462,7 +462,7 @@ ul {
   }
   &__bottom {
     background-color: #f4f3f3;
-    padding: 20px 40px;
+    padding: 20px 40px 97px;
     & .portfolio {
       &__name {
         &:after {
@@ -557,11 +557,79 @@ ul {
   }
 }
 
+/*.team {
+  padding: 70px 0;
+  &__photo {
+    & img {
+      width: 376px;
+      box-shadow: 0 0 27px 0 rgba(0, 0, 0, .23);
+    }
+  }
+}
+
+.master {
+  & h3 {
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(0, 0, 0);
+  }
+  &__rank {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    display: block;
+  }
+  &__caption {
+    font-size: 16px;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    display: inline-block;
+  }
+  &__stars {
+    display: flex;
+  }
+}
+
+.master-list {
+  &__caption {
+    font-size: 22px;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  & .tabs {
+    &__item {
+      margin: 0;
+      &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: -100%;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      &_active {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}*/
+
 .warm-flor {
   background: #fff url("../../img/img-bg-warm-floor-1.png");
   background-size: cover;
   padding: 70px 0;
+  &__box {
+    margin: 50px 0;
+  }
   &__head {
+    margin-bottom: 50px;
     & p {
       font-size: 18px;
       font-family: "Open Sans", sans-serif;
@@ -658,7 +726,7 @@ ul {
     margin-bottom: 160px;
     &_right {
       justify-content: flex-start;
-      & .features {
+      & .technology {
         &__img {
           right: 0;
           left: auto;
@@ -742,8 +810,36 @@ ul {
   }
 }
 
+.school {
+  padding: 70px 0;
+  background: #fff url("../../img/img-bg-school.png") no-repeat 100% 0;
+  &__items {
+    box-shadow: 2.47px 7.61px 24px 0 rgba(49, 49, 49, .16);
+  }
+  &__item {
+    background-color: #fff;
+    padding: 45px 50px;
+  }
+  &__name {
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(0, 0, 0);
+  }
+  &__list-item {
+    display: flex;
+  }
+  & p {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(0, 0, 0);
+    width: 390px;
+    padding-left: 30px;
+  }
+}
+
 .stock {
   background: #fff url("../../img/img-bg-stock.png") no-repeat;
+  background-size: cover;
   padding: 70px 0 320px;
   &__item {
     display: flex;
