@@ -22,14 +22,11 @@ $(document).ready(function () {
     });
     $(function () {
         $(".slider-js-1").owlCarousel({
-            items: 1,
-            //nav: true,
-            dots: true
+            items: 1
         });
         $(".slider-js-2").owlCarousel({
-            items: 1,
-            //nav: true,
-            dots: true
+            items: 1
         });
+
     });
 });
