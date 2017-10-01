@@ -788,16 +788,16 @@ ul {
 .warm-flor {
   background: #fff url("../img/img-bg-warm-floor-1.png") no-repeat 50% 50%;
   background-size: cover;
-  padding: 59px 0;
-  & h2{
+  padding: 59px 0 75px;
+  & h2 {
     font-weight: 900;
     letter-spacing: 0.5px;
   }
   &__box {
-    margin: 79px 0;
+    margin: 79px 0 0;
   }
   &__head {
-    margin-bottom: 50px;
+    margin-bottom: 37px;
     & p {
       font-size: 18px;
       font-family: "Open Sans", sans-serif;
@@ -810,12 +810,16 @@ ul {
     font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
     font-weight: bold;
-    padding-left: 50px;
+    padding-left: 27px;
+    margin-top: 12px;
     background: url("../img/icon-guarantee-orange.png") no-repeat;
+  }
+  &__form {
+    margin-top: 10px;
   }
   &__feadback {
     background-color: #fff;
-    padding: 30px 25px;
+    padding: 23px 28px;
     border-radius: 5px;
     & p {
       font-size: 18px;
@@ -826,10 +830,15 @@ ul {
   & input {
     background-color: #f7f7f7;
     width: 100%;
-    padding: 15px 20px;
+    padding: 13px 29px;
     border-radius: 5px;
     border: 1px solid #d1d1d1;
     margin-bottom: 10px;
+  }
+  & input[placeholder] {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: #111111;
   }
   & input[type=submit] {
     font-size: 16px;
@@ -849,6 +858,11 @@ ul {
 
 .countdown {
   display: flex;
+  &__caption {
+    font-size: 12px;
+    display: block;
+    padding: 0 13px 0 8px;
+  }
   &__item {
     display: flex;
     align-items: baseline;
@@ -863,15 +877,28 @@ ul {
 
 .technology {
   background: #fff url("../img/img-bg-features.png");
-  padding: 70px 0;
+  padding: 64px 0 71px;
+  & h2 {
+    width: 665px;
+    margin: 0 auto;
+    line-height: 38px;
+  }
   & .list {
     &__name {
+      font-size: 20px;
       &:before {
         display: none;
       }
     }
+    &__items {
+      padding-left: 17px;
+      padding-top: 14px;
+    }
     &__item {
       position: relative;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 24px;
       &:before {
         content: '';
         display: block;
@@ -884,32 +911,58 @@ ul {
         left: -16px;
       }
     }
-    &__item {
-      font-size: 16px;
+  }
+  &__photo {
+    position: relative;
+    & p {
+      font-size: 14px;
+      font-family: "OpenSans", sans-serif;
+      color: rgb(17, 17, 17);
+      text-align: center;
+      font-weight: 300;
+      margin-top: 31px;
+    }
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      border: 4px solid #ffad17;
+      top: -34px;
+      left: -35px;
+      z-index: 0;
+      height: 392px;
+      width: 471px;
     }
   }
   &__item {
     position: relative;
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 160px;
+    margin-bottom: 81px;
+    margin-top: 80px;
     &_right {
-      justify-content: flex-start;
-      & .technology {
-        &__img {
-          right: 0;
-          left: auto;
+      margin-bottom: 0;
+      & .technology{
+        &__item{
+
         }
-        &__descr {
-          padding: 20px 350px 20px 30px;
+        &__descr{
+          padding-left: 22px;
+          & h3{
+            line-height: 27px;
+          }
+        }
+        &__photo{
+          text-align: right;
+          &:before{
+            left: 119px;
+          }
         }
       }
     }
   }
   &__img {
-    position: absolute;
-    left: 0;
-    top: 31px;
+    position: relative;
     box-shadow: -14.923px 10.065px 27px 0 rgba(0, 0, 0, 0.23);
     &:before {
       border: 4px solid #ffad17;
@@ -920,9 +973,17 @@ ul {
     }
   }
   &__descr {
-    width: 80%;
-    padding: 20px 10px 20px 350px;
+    padding: 0 0 20px 15px;
     height: 470px;
+    & h3 {
+      line-height: 25px;
+    }
+    & p {
+      font-size: 16px;
+      margin: 49px 0 14px;
+      letter-spacing: .4px;
+      line-height: 20px;
+    }
   }
 }
 
@@ -953,7 +1014,7 @@ ul {
     color: rgb(255, 255, 255);
     display: block;
     text-align: center;
-    margin-bottom: 52px;
+    margin-bottom: 62px;
   }
   &__name {
     font-size: 24px;
@@ -974,15 +1035,29 @@ ul {
 }
 
 .catalog {
-  padding: 70px 0;
+  padding: 62px 0 40px;
   background-color: #ffffff;
+  & h2{
+    width: 565px;
+    line-height: 37px;
+    margin: 0 auto;
+  }
+  &__items{
+    padding-top: 48px;
+  }
+  &__descr{
+
+  }
   &__item {
     background-color: #fff;
     box-shadow: 2.472px 7.608px 24px 0 rgba(49, 49, 49, 0.16);
-    padding: 20px;
     text-align: center;
-    margin: 30px 0;
-    height: 370px;
+    margin-bottom: 28px;
+    height: 375px;
+    padding-top: 12px;
+    & img {
+      height: 179px;
+    }
   }
   &__name {
     font-size: 24px;
@@ -991,13 +1066,17 @@ ul {
     font-weight: 600;
     display: block;
     text-align: left;
+    line-height: 24px;
+    padding: 0 60px 0 20px;
   }
   & p {
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
-    padding-right: 25px;
     text-align: left;
+    margin-top: 17px;
+    line-height: 20px;
+    padding: 0 42px 0 20px;
   }
 }
 
