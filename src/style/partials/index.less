@@ -713,7 +713,7 @@ ul {
       display: flex;
       margin-bottom: 27px;
     }
-    & p{
+    & p {
       font-size: 16px;
       font-family: "Open Sans", sans-serif;
       color: rgb(0, 0, 0);
@@ -757,10 +757,10 @@ ul {
     font-weight: bold;
     padding-left: 10px;
   }
-  &__items{
+  &__items {
     margin: 25px 0 66px;
   }
-  &__item{
+  &__item {
     margin: 0;
     margin-left: 10px;
   }
@@ -786,11 +786,15 @@ ul {
 }
 
 .warm-flor {
-  background: #fff url("../img/img-bg-warm-floor-1.png");
+  background: #fff url("../img/img-bg-warm-floor-1.png") no-repeat 50% 50%;
   background-size: cover;
-  padding: 70px 0;
+  padding: 59px 0;
+  & h2{
+    font-weight: 900;
+    letter-spacing: 0.5px;
+  }
   &__box {
-    margin: 50px 0;
+    margin: 79px 0;
   }
   &__head {
     margin-bottom: 50px;
@@ -798,6 +802,7 @@ ul {
       font-size: 18px;
       font-family: "Open Sans", sans-serif;
       color: rgb(17, 17, 17);
+      line-height: 30px;
     }
   }
   &__guarantee {
@@ -922,15 +927,25 @@ ul {
 }
 
 .sale {
-  padding: 60px 0 70px;
+  padding: 60px 0 20px;
   background-color: #084b92;
   & h2 {
     color: #fff;
     font-weight: 900;
     letter-spacing: 1px;
   }
-  &__item{
+  &__box {
+    padding: 16px 0 18px 33px;
+  }
+  &__item {
     border-bottom: 1px dotted #f4f3f1;
+    margin-bottom: 15px;
+    &:last-child {
+      border: none;
+    }
+  }
+  &__img {
+    margin-top: 14px;
   }
   &__subtitle {
     font-size: 24px;
@@ -938,16 +953,23 @@ ul {
     color: rgb(255, 255, 255);
     display: block;
     text-align: center;
+    margin-bottom: 52px;
   }
   &__name {
     font-size: 24px;
     font-family: "Open Sans", sans-serif;
     color: rgb(255, 255, 255);
   }
-  &__txt {
+  & p {
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
     color: rgb(255, 255, 255);
+    padding: 7px 0 25px;
+    line-height: 20px;
+  }
+  &__sponsor {
+    margin-right: 7px;
+    margin-bottom: 14px;
   }
 }
 
