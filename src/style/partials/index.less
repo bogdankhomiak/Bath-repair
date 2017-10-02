@@ -851,8 +851,13 @@ ul {
     border: none;
   }
   &_second {
-    background: url(../img/img-bg-warm-floor-2.png) #074e99 no-repeat;
+    background: url(../img/img-bg-warm-floor-2.png) no-repeat #074e99 -177% 61%;
     background-size: contain;
+    & .warm-flor {
+      &__feadback {
+        margin: 85px 0px 68px 0px;
+      }
+    }
   }
 }
 
@@ -861,7 +866,7 @@ ul {
   &__caption {
     font-size: 12px;
     display: block;
-    padding: 0 13px 0 8px;
+    padding: 0 8px 0 8px;
   }
   &__item {
     display: flex;
@@ -942,19 +947,19 @@ ul {
     margin-top: 80px;
     &_right {
       margin-bottom: 0;
-      & .technology{
-        &__item{
+      & .technology {
+        &__item {
 
         }
-        &__descr{
+        &__descr {
           padding-left: 22px;
-          & h3{
+          & h3 {
             line-height: 27px;
           }
         }
-        &__photo{
+        &__photo {
           text-align: right;
-          &:before{
+          &:before {
             left: 119px;
           }
         }
@@ -1037,15 +1042,15 @@ ul {
 .catalog {
   padding: 62px 0 40px;
   background-color: #ffffff;
-  & h2{
+  & h2 {
     width: 565px;
     line-height: 37px;
     margin: 0 auto;
   }
-  &__items{
+  &__items {
     padding-top: 48px;
   }
-  &__descr{
+  &__descr {
 
   }
   &__item {
@@ -1081,22 +1086,48 @@ ul {
 }
 
 .school {
-  padding: 70px 0;
+  padding: 73px 0 211px;
   background: #fff url("../img/img-bg-school.png") no-repeat 100% 0;
+  & h2 {
+    font-weight: 900;
+  }
+  &__slider {
+    margin-top: 70px;
+  }
   &__items {
     box-shadow: 2.47px 7.61px 24px 0 rgba(49, 49, 49, .16);
   }
   &__item {
     background-color: #fff;
-    padding: 45px 50px;
+    padding: 36px 60px 0 47px;
   }
   &__name {
     font-size: 24px;
     font-family: "Open Sans", sans-serif;
     color: rgb(0, 0, 0);
+    line-height: 31px;
+  }
+  &__list {
+    margin-top: 36px;
   }
   &__list-item {
     display: flex;
+    margin-bottom: 24px;
+    &:nth-child(1n) {
+      & p {
+        padding-right: 75px;
+      }
+    }
+    &:nth-child(2n) {
+      & p {
+        padding-right: 40px;
+      }
+    }
+    &:nth-child(3n) {
+      & p {
+        padding-right: 0;
+      }
+    }
   }
   & p {
     font-size: 18px;
@@ -1104,13 +1135,27 @@ ul {
     color: rgb(0, 0, 0);
     width: 390px;
     padding-left: 30px;
+    line-height: 30px;
+
+  }
+  & .owl-theme .owl-dots {
+    top: 64px;
   }
 }
 
 .stock {
   background: #fff url("../img/img-bg-stock.png") no-repeat;
   background-size: cover;
-  padding: 70px 0 320px;
+  padding: 68px 0 319px;
+  & h2 {
+    font-weight: 600;
+    width: 750px;
+    line-height: 47px;
+    margin: 0 auto;
+  }
+  &__items {
+    margin-top: 51px;
+  }
   &__item {
     display: flex;
   }
@@ -1118,18 +1163,24 @@ ul {
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
-    padding-left: 30px;
+    padding-left: 27px;
     width: 300px;
+    line-height: 30px;
+    font-weight: 600;
   }
 }
 
 .trust {
-  padding: 70px 0;
+  padding: 58px 0 98px;
   background: url("../img/img-bg-features.png") no-repeat;
   background-size: cover;
+  & h2{
+    font-weight: 900;
+  }
   &__items {
     display: flex;
     background-color: #fff;
+    margin-top: 59px;
   }
   &__item {
     text-align: center;
@@ -1139,23 +1190,31 @@ ul {
     font-family: "Open Sans", sans-serif;
     color: rgb(0, 0, 0);
     width: 240px;
+    margin-top: 33px;
+    line-height: 20px;
   }
 }
 
 .contacts {
   display: flex;
   &__descr {
-    width: 50%;
-    padding: 70px 75px;
+    width: 44%;
+    padding: 57px 55px;
     & h2 {
       text-align: left;
+      font-weight: 900;
+      padding-left: 22px;
     }
+  }
+  &__list{
+    margin-top: 57px;
   }
   &__item {
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
     display: flex;
+    margin-bottom: 19px;
   }
   &__span {
     font-size: 16px;
@@ -1179,16 +1238,18 @@ ul {
   }
   &__txt {
     padding-left: 20px;
+    width: 370px;
+  }
+  &__map{
+    width: 56%;
+
   }
 }
 
-.map {
-  width: 50%;
-}
 
 .footer {
   background-color: #084b92;
-  padding: 50px 0;
+  padding: 45px 0;
   &__box {
     display: flex;
     justify-content: space-between;
