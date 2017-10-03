@@ -61,7 +61,7 @@ ul {
 }
 
 .header {
-  background: #e1e1e1 url("../img/img-bg-header.png") no-repeat;
+  background: url(../img/img-bg-header.png) no-repeat 50% 50% #e1e1e1;
   padding-bottom: 37px;
   background-size: cover;
 }
@@ -148,7 +148,7 @@ ul {
       font-family: "Open Sans", sans-serif;
       color: rgb(17, 17, 17);
       font-weight: 600;
-      width: 250px;
+      width: 262px;
       margin-left: 34px;
       line-height: 21px;
     }
@@ -240,16 +240,6 @@ ul {
   }
 }
 
-.range-slider {
-  & p {
-    font-size: 18px;
-    font-family: "Open Sans", sans-serif;
-    color: rgb(17, 17, 17);
-    text-align: center;
-    font-weight: 600;
-    padding: 7px 0 0 69px;
-  }
-}
 
 .advantages {
   padding: 58px 0 67px;
@@ -485,6 +475,7 @@ ul {
 .portfolio {
   padding: 57px 0 30px;
   & .tabs {
+    box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.17);
     &__content {
       &_active {
         display: flex;
@@ -572,6 +563,7 @@ ul {
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
+    font-weight: 600;
     display: block;
     position: relative;
     top: -11px;
@@ -940,9 +932,9 @@ ul {
     }
   }
   &__item {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
+    //position: relative;
+    //display: flex;
+    //justify-content: flex-end;
     margin-bottom: 81px;
     margin-top: 80px;
     &_right {
@@ -1096,6 +1088,7 @@ ul {
   }
   &__items {
     box-shadow: 2.47px 7.61px 24px 0 rgba(49, 49, 49, .16);
+    background-color: #fff;
   }
   &__item {
     background-color: #fff;

@@ -37,6 +37,7 @@
   width: 60px;
   text-align: center;
 }
+
 .irs-with-grid {
   width: 350px;
   float: right;
@@ -66,8 +67,31 @@
     background-color: #084b93;
     border-radius: 5px;
   }
+  & p {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(17, 17, 17);
+    text-align: center;
+    font-weight: 600;
+    padding: 7px 0 0 69px;
+  }
 }
 
 .irs-from:after, .irs-single:after, .irs-to:after {
   display: none;
+}
+
+@media (max-width: 767px) {
+  .irs-with-grid {
+    width: 168px;
+  }
+
+  .range-slider {
+    padding: 0 20px 10px 20px;
+    & p {
+      padding-left: 10px;
+      text-align: left;
+    }
+  }
+
 }

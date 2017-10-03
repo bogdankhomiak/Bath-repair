@@ -1,0 +1,600 @@
+@media (max-width: 1199px) {
+  .header-nav {
+    margin-left: 0;
+  }
+
+  .header-contacts {
+    padding-right: 0;
+  }
+
+  .header-main {
+    &__item {
+      p {
+        width: 200px;
+        margin-left: 16px;
+      }
+    }
+  }
+
+  .tabs-block {
+    img {
+      width: 100%;
+    }
+    p {
+      padding-right: 30px;
+    }
+    &_primary {
+      top: -30px;
+      height: 700px;
+      .tabs-price {
+        &__new {
+          font-size: 30px;
+        }
+      }
+      .tabs-block {
+        &__title {
+          font-size: 21px;
+        }
+      }
+    }
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .portfolio {
+    &__descr {
+      width: 100%;
+      display: flex;
+      margin-top: -40px;
+    }
+    &__head {
+      padding-left: 27px;
+      padding-right: 27px;
+      width: 30%;
+    }
+    &__bottom {
+      padding-left: 27px;
+      padding-right: 27px;
+      width: 70%;
+      & .portfolio {
+        &__name {
+          display: inline-block;
+          &:after {
+            right: -30px;
+          }
+        }
+      }
+    }
+    &__btn {
+      position: relative;
+      right: 286px;
+    }
+    &__link {
+      display: inline-block;
+      &:after {
+        right: -30px;
+      }
+    }
+    & .tabs {
+      &__content {
+        &_active {
+          display: block;
+        }
+      }
+    }
+    & .list {
+      &__items {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      &__item {
+        width: 300px;
+      }
+    }
+  }
+
+  .features {
+    &__img {
+      width: 400px;
+    }
+    &__descr {
+      height: auto;
+      padding-left: 230px;
+    }
+    &__item {
+      &_right {
+        & .features {
+          &__descr {
+            padding-right: 230px;
+          }
+        }
+      }
+    }
+  }
+
+  .team {
+    &__photo {
+      &:before {
+        height: 488px;
+        width: 318px;
+      }
+      & img {
+        height: 488px;
+        width: 318px;
+      }
+    }
+  }
+
+  .master-list {
+    position: static;
+    margin-top: 30px;
+  }
+
+  .sale {
+    &__img {
+      width: 100%;
+    }
+  }
+
+  .technology {
+    &__photo {
+      & img {
+        width: 100%;
+      }
+      &:before {
+        left: -30px;
+      }
+    }
+    &__item {
+      &_right {
+        & .technology {
+          &__photo {
+            &:before {
+              left: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .catalog {
+    &__item {
+      height: 425px;
+    }
+  }
+
+  .school {
+    & p {
+      width: 350px;
+    }
+    &__list-item {
+      &:nth-child(1n), &:nth-child(2n), &:nth-child(3n) {
+        & p {
+          padding-right: 25px;
+        }
+      }
+    }
+  }
+
+  .stock {
+    & p {
+      width: 250px;
+    }
+  }
+
+}
+
+@media (max-width: 991px) {
+  .header-nav {
+    width: 250px;
+    margin-top: 25px;
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: baseline;
+    }
+    &__link {
+      padding: 0;
+      text-align: left;
+      width: 125px;
+    }
+  }
+
+  .header-main {
+    &__item {
+      display: block;
+      & p {
+        text-align: center;
+        margin: 17px 0;
+        width: auto;
+      }
+    }
+  }
+
+  .tabs-block {
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    &_absolute {
+      top: -254px;
+      width: 100%;
+    }
+    &_primary {
+      position: static;
+      box-shadow: none;
+      height: auto;
+      & .tabs-price {
+        &__old {
+          display: none;
+        }
+        &__new {
+          text-align: center;
+        }
+      }
+    }
+    &__item {
+      &_first {
+        display: none;
+      }
+    }
+    & .list {
+      &__icons {
+        display: none;
+      }
+    }
+  }
+
+  .tabs-price {
+    display: block;
+    &__old {
+      display: none;
+    }
+    &__new {
+      text-align: left;
+    }
+  }
+
+  .portfolio {
+    &__head {
+      width: 39%;
+    }
+    &__bottom {
+      width: 61%;
+      padding: 9px 15px;
+    }
+    & .list {
+      &__item {
+        width: 213px;
+      }
+    }
+  }
+
+  .features {
+    &__img {
+      display: none;
+    }
+    &__descr {
+      width: 100%;
+      padding-left: 38px;
+    }
+    &__item {
+      &_right {
+        & .features {
+          &__descr {
+            padding-right: 28px;
+          }
+        }
+      }
+    }
+    & .list {
+      &__sponsors {
+        display: flex;
+        justify-content: normal;
+        align-items: center;
+      }
+      &__sponsor {
+        margin-right: 28px;
+      }
+    }
+  }
+
+  .team {
+    &__photo {
+      padding-left: 0;
+      padding-top: 0;
+      margin-top: 78px;
+      & img {
+        width: 208px;
+        height: 318px;
+      }
+      &:before {
+        width: 205px;
+        height: 320px;
+        top: 57px;
+        left: -5px;
+      }
+    }
+  }
+
+  .master {
+    padding-top: 32px;
+    &__item {
+      & p {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  .master-list {
+    &__caption {
+      padding-left: 0;
+    }
+    &__items {
+      justify-content: flex-start;
+    }
+  }
+
+  .sale {
+    &__sponsor {
+      margin-right: 2px;
+    }
+  }
+
+  .technology {
+    &__photo {
+      &:before {
+        width: 270px;
+        height: 270px;
+        top: -24px;
+        left: -24px;
+      }
+    }
+    &__descr {
+      height: auto;
+    }
+  }
+
+  .stock {
+    & h2 {
+      width: auto;
+    }
+    &__item {
+      display: block;
+    }
+    & p {
+      width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+  }
+}
+
+/*@media (max-width: 767px) {
+  .header {
+    padding-bottom: 66px;
+  }
+
+  .logotype {
+    &__link {
+      margin-left: 0;
+    }
+  }
+
+  .header-top {
+    justify-content: flex-start;
+  }
+
+  .header-nav {
+    margin-left: 31px;
+    width: 280px;
+    &__link {
+      font-size: 16px;
+      width: 140px;
+    }
+  }
+
+  .header-main {
+    padding-top: 17px;
+    &__items {
+      padding-top: 44px;
+    }
+    &__item {
+      & p {
+        margin: 11px 0;
+      }
+    }
+  }
+
+  .advantages {
+    padding-bottom: 32px;
+    &__item {
+      padding-top: 37px;
+      padding-bottom: 0;
+    }
+  }
+
+  .tabs {
+    &__items {
+      margin-bottom: 43px;
+    }
+  }
+
+  .portfolio {
+    padding-bottom: 72px;
+    &__bottom {
+      padding-top: 16px;
+      padding-bottom: 18px;
+    }
+  }
+
+  .technology {
+    &__descr {
+      padding-left: 0;
+      margin-top: 40px;
+      & p {
+        margin-top: 35px;
+      }
+    }
+  }
+
+  .warm-flor {
+    padding: 70px 0 73px;
+    &_second {
+      & .warm-flor {
+        &__feadback {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .school {
+    padding-top: 57px;
+    padding-bottom: 51px;
+    & p {
+      font-size: 14px;
+      line-height: 18px;
+      width: 270px;
+    }
+    &__list {
+      margin-top: 21px;
+    }
+    &__item {
+      padding: 24px 34px 0 31px;
+    }
+    &__name {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &__slider {
+      margin-top: 15px;
+    }
+  }
+
+  .stock {
+    padding-top: 59px;
+    padding-bottom: 241px;
+    & h2 {
+      font-weight: 900;
+      letter-spacing: -0.6px;
+    }
+    &__items {
+      margin-top: 33px;
+    }
+  }
+
+  .contacts {
+    &__descr {
+      padding: 57px 7px 0 24px;
+    }
+  }
+
+  .footer {
+    padding: 30px 0 15px;
+    &__box {
+      display: block;
+    }
+    & p {
+      margin-bottom: 20px;
+    }
+  }
+}*/
+
+.trust {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 23px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 23px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .header-contacts {
+    &__tel, &__span {
+      display: none;
+    }
+  }
+
+  .header-main {
+    &__item {
+      display: flex;
+      & p {
+        width: 205px;
+        text-align: left;
+      }
+    }
+  }
+
+  .header-calculator {
+    width: 100%;
+    &__top {
+      display: block;
+      padding: 22px;
+    }
+    &__bottom {
+      padding: 20px;
+    }
+  }
+
+  .advantages {
+    &__item {
+      padding: 25px 15px 0;
+    }
+    &__span {
+      font-size: 18px;
+    }
+  }
+
+  .advantages-list {
+    height: auto;
+  }
+
+  .tabs {
+    &__item {
+      display: none;
+      &_active {
+        display: block;
+      }
+    }
+  }
+
+  .tabs-block {
+    padding: 20px 18px 15 px;
+    position: static;
+    background-color: #fff;
+    & img {
+      width: 95px;
+    }
+    &__descr{
+      display: none;
+    }
+    &_primary{
+      & .tabs-block{
+        &__title{
+          display: none;
+        }
+      }
+    }
+  }
+  .list{
+    margin-bottom: 0;
+    &__name{
+      display: none;
+    }
+  }
+}
