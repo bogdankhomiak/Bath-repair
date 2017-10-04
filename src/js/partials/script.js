@@ -29,4 +29,19 @@ $(document).ready(function () {
         });
 
     });
+    $(function () {
+        $(".header-nav-mob").click(function () {
+            $(".icon__menu").toggleClass("active");
+            if ($(".header-nav").is(":visible")) {
+                $(".header-nav").fadeOut(0);
+            } else {
+                $(".header-nav").fadeIn(0);
+            }
+        });
+
+        $(".header-nav__link").click(function () {
+            $(".header-nav").fadeOut(0);
+            $(".icon__menu").toggleClass("active");
+        })
+    });
 });

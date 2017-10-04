@@ -140,6 +140,12 @@ ul {
   }
 }
 
+.header-nav-mob {
+  display: none;
+  padding: 20px 0 0 0;
+  z-index: 9;
+}
+
 .header-main {
   padding-top: 32px;
   &__items {
@@ -858,11 +864,14 @@ ul {
 
   }
   &_second {
-    background: url(../img/img-bg-warm-floor-2.png) no-repeat #074e99 -177% 61%;
-    background-size: contain;
+    background: #074e99;
     & .warm-flor {
       &__feadback {
-        margin: 85px 0px 68px 0px;
+        margin: 85px 0px 68px 0;
+      }
+      &__wrapper {
+        background: url(../img/img-bg-warm-floor-2.png) -100px no-repeat #074e99;
+        background-size: contain;
       }
     }
   }
