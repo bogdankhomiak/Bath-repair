@@ -553,7 +553,7 @@
     &__item {
       display: flex;
       & p {
-        width: 205px;
+        width: 216px;
         text-align: left;
       }
     }
@@ -597,6 +597,9 @@
       position: static;
     }
     & .tabs {
+      &__items {
+        justify-content: flex-start;
+      }
       &__item {
         display: block;
         padding: 7px 12px;
@@ -607,7 +610,7 @@
   .tabs {
     &__items {
       flex-wrap: wrap;
-      justify-content: flex-start;
+      justify-content: center;
     }
     &__item {
       display: none;
@@ -643,9 +646,6 @@
     }
     &__sponsor {
       display: none;
-      &_mob {
-        display: block;
-      }
     }
   }
 
@@ -665,6 +665,11 @@
     & .list {
       &__items {
         padding-left: 0;
+      }
+      &__sponsor {
+        &_mob {
+          display: block;
+        }
       }
     }
     &__item {
@@ -708,6 +713,9 @@
 
   .warm-flor {
     background: #fff;
+    &_second {
+      background: #074e99;
+    }
     &__box {
       margin-top: 20px;
     }
@@ -717,11 +725,15 @@
       }
     }
     &__feadback {
-      padding: 10px 0;
+      padding: 20px;
+      & p {
+        text-align: center;
+      }
     }
   }
 
   .countdown {
+    justify-content: center;
     &__caption {
       padding: 0 5px 0 3px;
     }
@@ -734,6 +746,8 @@
       font-size: 18px;
     }
     &__item {
+      margin-top: 0;
+      margin-bottom: 0;
       &_right {
         & .technology {
           &__descr {
@@ -745,6 +759,7 @@
     &__descr {
       padding-left: 0;
       margin-top: 15px;
+      padding-bottom: 0;
       & p {
         margin-top: 15px;
       }
