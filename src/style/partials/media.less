@@ -47,7 +47,6 @@
     &__descr {
       width: 100%;
       display: flex;
-      margin-top: -40px;
     }
     &__head {
       padding-left: 27px;
@@ -120,10 +119,10 @@
         height: 488px;
         width: 318px;
       }
-      & img {
-        height: 488px;
-        width: 318px;
-      }
+    }
+    &__img {
+      height: 488px;
+      width: 318px;
     }
   }
 
@@ -306,16 +305,16 @@
       padding-left: 0;
       padding-top: 0;
       margin-top: 78px;
-      & img {
-        width: 208px;
-        height: 318px;
-      }
       &:before {
         width: 205px;
         height: 320px;
         top: 57px;
         left: -5px;
       }
+    }
+    &__img {
+      width: 208px;
+      height: 318px;
     }
   }
 
@@ -370,6 +369,7 @@
       text-align: center;
     }
   }
+
 }
 
 /*@media (max-width: 767px) {
@@ -503,10 +503,6 @@
   }
 }*/
 
-.trust {
-  display: none;
-}
-
 @media (max-width: 767px) {
   h1 {
     font-size: 23px;
@@ -516,8 +512,24 @@
     font-size: 24px;
   }
 
+  h3 {
+    font-size: 18px;
+  }
+
   .subtitle {
     font-size: 23px;
+  }
+
+  .logotype {
+    &__link {
+      margin-left: 0;
+    }
+    &__img {
+      display: none;
+      &_mob {
+        display: block;
+      }
+    }
   }
 
   .header-nav {
@@ -527,6 +539,13 @@
   .header-contacts {
     &__tel, &__span {
       display: none;
+    }
+    &__feedback {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 0;
+      background: url(../img/icon-phone-orange-mob.png);
     }
   }
 
@@ -564,7 +583,32 @@
     height: auto;
   }
 
+  .portfolio {
+    &__descr {
+      display: block;
+    }
+    &__head {
+      width: 100%;
+    }
+    &__bottom {
+      width: 100%;
+    }
+    &__btn {
+      position: static;
+    }
+    & .tabs {
+      &__item {
+        display: block;
+        padding: 7px 12px;
+      }
+    }
+  }
+
   .tabs {
+    &__items {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
     &__item {
       display: none;
       &_active {
@@ -574,27 +618,261 @@
   }
 
   .tabs-block {
-    padding: 20px 18px 15 px;
+    padding: 20px 18px 15px;
     position: static;
     background-color: #fff;
     & img {
       width: 95px;
     }
-    &__descr{
+    &__descr {
       display: none;
     }
-    &_primary{
-      & .tabs-block{
-        &__title{
+    &_primary {
+      & .tabs-block {
+        &__title {
           display: none;
         }
       }
     }
   }
-  .list{
+
+  .list {
     margin-bottom: 0;
-    &__name{
+    &__name {
       display: none;
+    }
+    &__sponsor {
+      display: none;
+      &_mob {
+        display: block;
+      }
+    }
+  }
+
+  .features {
+    & h2 {
+      width: auto;
+      padding: 0 15px;
+      font-size: 22px;
+    }
+    &__item {
+      padding: 0 15px;
+      margin-top: 15px;
+    }
+    &__descr {
+      padding: 20px 15px 20px 25px;
+    }
+    & .list {
+      &__items {
+        padding-left: 0;
+      }
+    }
+    &__item {
+      margin-bottom: 0;
+      &_right {
+        & .features {
+          &__descr {
+            padding: 20px 15px 20px 25px;
+          }
+        }
+      }
+    }
+  }
+
+  .team {
+    &__photo {
+      text-align: center;
+      &:before {
+        display: none;
+      }
+    }
+    &__img {
+      display: none;
+      &_mob {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .sale {
+    &__subtitle {
+      font-size: 16px;
+    }
+    &__box {
+      padding: 20px 0;
+    }
+  }
+
+  .warm-flor {
+    background: #fff;
+    &__box {
+      margin-top: 20px;
+    }
+    &__head {
+      & p {
+        font-size: 16px;
+      }
+    }
+    &__feadback {
+      padding: 10px 0;
+    }
+  }
+
+  .countdown {
+    &__caption {
+      padding: 0 5px 0 3px;
+    }
+  }
+
+  .technology {
+    & h2 {
+      width: auto;
+      padding: 0 15px;
+      font-size: 18px;
+    }
+    &__item {
+      &_right {
+        & .technology {
+          &__descr {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+    &__descr {
+      padding-left: 0;
+      margin-top: 15px;
+      & p {
+        margin-top: 15px;
+      }
+      & h3 {
+        font-size: 18px;
+      }
+    }
+    &__photo {
+      &:before {
+        display: none;
+      }
+      & p {
+        display: none;
+      }
+    }
+    & .list {
+      &__name {
+        display: block;
+        font-size: 16px;
+      }
+      &__item {
+        font-size: 16px;
+        &:before {
+          top: 9px;
+        }
+      }
+    }
+  }
+
+  .master {
+    height: auto;
+  }
+
+  .master-list {
+    display: none;
+  }
+
+  .catalog {
+    & h2 {
+      width: auto;
+      font-size: 24px;
+    }
+    & p {
+      padding: 0 15px 15px 15px;
+    }
+    &__name {
+      font-size: 18px;
+      padding: 0 15px;
+    }
+    &__item {
+      height: auto;
+    }
+  }
+
+  .trust {
+    &__items {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    & p {
+      margin-bottom: 20px;
+    }
+  }
+
+  .school {
+    background: #fff;
+    & p {
+      font-size: 14px;
+      padding-left: 10px;
+    }
+    &__name {
+      font-size: 16px;
+    }
+    &__item {
+      padding: 20px;
+    }
+    &__list-item {
+      &:nth-child(1n), &:nth-child(2n), &:nth-child(3n) {
+        & p {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  .stock {
+    &__item {
+      display: flex;
+    }
+  }
+
+  .contacts {
+    display: block;
+    &__map {
+      display: none;
+    }
+    &__descr {
+      width: 100%;
+      padding: 20px 15px;
+      & h2 {
+        padding-left: 0;
+        text-align: center;
+      }
+    }
+    &__list {
+      margin-top: auto;
+    }
+    &__mail {
+      padding-left: 7px;
+    }
+    &__tel {
+      padding-left: 10px;
+    }
+    &__txt {
+      padding-left: 10px;
+      width: 270px;
+    }
+
+  }
+
+  .footer {
+    padding: 20px 0 0 0;
+    &__box {
+      display: block;
+      & p {
+        margin-bottom: 20px;
+        font-size: 14px;
+      }
     }
   }
 }
