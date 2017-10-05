@@ -306,6 +306,17 @@ ul {
   & h2 {
     color: #fff;
   }
+  & .tabs {
+    &__content {
+      &_active{
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+  & .tabs-block {
+    width: 33.33%;
+  }
 }
 
 .slider {
@@ -503,6 +514,7 @@ ul {
       padding: 20px 31px;
       text-transform: none;
       margin: 0;
+      display: block;
       &_active {
         background-color: #0368d6;
         border-bottom-color: #8fc5ff;
@@ -1276,35 +1288,4 @@ ul {
     text-decoration: underline;
     color: #fff;
   }
-}
-
-.owl-theme .owl-nav {
-  position: relative;
-  top: -45px;
-}
-
-.owl-theme .owl-dots {
-  position: absolute;
-  bottom: 25px;
-  width: 100%;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  height: 15px;
-  width: 15px;
-  box-sizing: border-box;
-  border: 2px solid #00499b;
-  background: #fff;
-}
-
-.owl-theme .owl-dots .owl-dot.active span {
-  background: #00499b;
-}
-
-.owl-theme .owl-dots .owl-dot:hover span {
-  background: rgba(0, 73, 155, 0.5);
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  margin: 5px;
 }

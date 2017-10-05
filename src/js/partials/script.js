@@ -44,4 +44,15 @@ $(document).ready(function () {
             $(".icon__menu").toggleClass("active");
         })
     });
+    $(function () {
+        $(".tabs__item").click(function () {
+            $(".tabs__items").toggleClass("selected");
+        });
+    });
+    $(function () {
+        $(".list").click(function () {
+            $(".list").not(this).removeClass("on");
+            $(this).toggleClass("on");
+        });
+    });
 });
