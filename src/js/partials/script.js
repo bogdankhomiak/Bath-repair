@@ -55,4 +55,17 @@ $(document).ready(function () {
             $(this).toggleClass("on");
         });
     });
+    $(function () {
+        var sld = function() {
+            if ($(window).width() <= 767) {
+                $(".slider-js-3").owlCarousel({
+                    items: 1
+                });
+            } else {
+                $(".slider-js-3").owlCarousel('destroy');
+            }
+        };
+        sld();
+        $(window).resize(sld);
+    });
 });

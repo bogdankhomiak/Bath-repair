@@ -308,7 +308,7 @@ ul {
   }
   & .tabs {
     &__content {
-      &_active{
+      &_active {
         display: flex;
         flex-wrap: wrap;
       }
@@ -717,6 +717,18 @@ ul {
     width: 376px;
     &_mob {
       display: none;
+    }
+  }
+  & .owl-carousel {
+    display: block;
+    & .owl-item {
+      & .team {
+        &__img {
+          &_mob {
+            display: none;
+          }
+        }
+      }
     }
   }
 }
