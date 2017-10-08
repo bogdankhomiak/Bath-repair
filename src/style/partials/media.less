@@ -165,6 +165,13 @@
     }
   }
 
+  .warm-flor {
+    &_second {
+      background: url(../img/img-bg-warm-floor-2-table.png) 50% 50% no-repeat #074e99;
+      padding: 0;
+    }
+  }
+
   .school {
     & p {
       width: 350px;
@@ -187,9 +194,16 @@
 }
 
 @media (max-width: 991px) {
+  .logotype {
+    &__link {
+      margin-left: 0;
+    }
+  }
+
   .header-nav {
-    width: 250px;
+    width: 270px;
     margin-top: 25px;
+    margin-left: 55px;
     &__items {
       display: flex;
       flex-wrap: wrap;
@@ -198,53 +212,31 @@
     &__link {
       padding: 0;
       text-align: left;
-      width: 125px;
+      width: 135px;
+      font-size: 16px;
     }
   }
 
+  .header-contacts {
+    margin-right: -13px;
+    line-height: 25px;
+  }
+
   .header-main {
+    padding-top: 11px;
+    &__items {
+      padding-top: 44px;
+    }
     &__item {
       display: block;
       & p {
         text-align: center;
-        margin: 17px 0;
+        margin: 11px 0;
         width: auto;
       }
     }
   }
 
-  /*.tabs-block {
-    height: auto;
-    position: absolute;
-    z-index: 2;
-    &_absolute {
-      top: -254px;
-      width: 100%;
-    }
-    &_primary {
-      position: static;
-      box-shadow: none;
-      height: auto;
-      & .tabs-price {
-        &__old {
-          display: none;
-        }
-        &__new {
-          text-align: center;
-        }
-      }
-    }
-    &__item {
-      &_first {
-        display: none;
-      }
-    }
-    & .list {
-      &__icons {
-        display: none;
-      }
-    }
-  }*/
   .price {
     & .tabs-block {
       width: 50%;
@@ -285,6 +277,9 @@
 
     }
     & .tabs {
+      &__items {
+        margin-bottom: 40px;
+      }
       &__content {
         align-items: flex-start;
       }
@@ -567,7 +562,7 @@
         margin-left: 35px;
         margin-right: 35px;
         position: relative;
-        &:after{
+        &:after {
           content: '';
           display: inline-block;
           width: 19px;
@@ -579,7 +574,7 @@
         }
         &.selected {
           border-radius: 26px;
-          &:after{
+          &:after {
             background: url("../../img/icon-arrow-right.png") no-repeat 50% 50%;
           }
           & .tabs {
@@ -600,7 +595,7 @@
           border: none;
         }
       }
-      &__content{
+      &__content {
         margin: 0 10px;
       }
       &__btn {
@@ -616,9 +611,9 @@
         position: static;
         padding-bottom: 100px;
       }
-      &.tabs-block_primary{
-        & .tabs-price{
-          &__new{
+      &.tabs-block_primary {
+        & .tabs-price {
+          &__new {
             font-size: 25px;
             margin: 10px 0 0;
           }
@@ -842,8 +837,8 @@
     padding: 20px 0;
     background: #fff;
     &_second {
-      padding: 20px 0;
-      background: #074e99;
+      padding: 270px 0 20px;
+      background: url(../img/img-bg-warm-floor-2-mob.png) 50% -20px no-repeat #074e99;
       & .warm-flor {
         &__feadback {
           margin: 0;
