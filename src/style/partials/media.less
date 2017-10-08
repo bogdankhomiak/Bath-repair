@@ -95,6 +95,7 @@
   }
 
   .features {
+    padding-bottom: 0;
     &__img {
       width: 400px;
     }
@@ -138,12 +139,23 @@
   }
 
   .technology {
+    padding-bottom: 15px;
     &__photo {
+      left: 40px;
+      & p {
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
       & img {
         width: 100%;
       }
       &:before {
         left: -30px;
+      }
+    }
+    &__descr {
+      & p {
+        margin-top: 18px;
       }
     }
     &__item {
@@ -191,6 +203,11 @@
     }
   }
 
+  .footer {
+    &__box {
+      display: block;
+    }
+  }
 }
 
 @media (max-width: 991px) {
@@ -245,6 +262,23 @@
       &_absolute {
         position: absolute;
         bottom: 0;
+        top: 400px;
+        & .tabs-block {
+          &__title {
+            position: relative;
+            text-decoration: underline;
+            &:after {
+              content: '';
+              display: inline-block;
+              width: 19px;
+              height: 19px;
+              background: url("../../img/icon-arrow-down.png") no-repeat 50% 50%;
+              position: relative;
+              top: 4px;
+              left: 15px;
+            }
+          }
+        }
       }
       &_primary {
         height: auto;
@@ -275,6 +309,20 @@
         }
       }
 
+      & .list {
+        &.on {
+          & .tabs-block {
+            &__title {
+              &:after {
+                background: url("../img/icon-arrow-right.png") no-repeat 50% 50%;
+              }
+            }
+          }
+        }
+      }
+      & p {
+        background-image: url("../img/icon-gift.png");
+      }
     }
     & .tabs {
       &__items {
@@ -414,13 +462,49 @@
     }
   }
 
-  .contacts {
-    &__map {
-      width: 50%;
+  .school {
+    background-image: url("../img/img-bg-school-table.png");
+    padding-top: 58px;
+    padding-bottom: 93px;
+    &__name {
+      font-size: 18px;
+      line-height: 22px;
     }
-    &__descr {
-      width: 50%;
-      padding: 57px 40px;
+    & p {
+      font-size: 14px;
+      line-height: normal;
+      width: 268px;
+    }
+    &__items {
+      &:before {
+        bottom: -70px;
+      }
+    }
+    &__item {
+      padding: 25px 35px 24px 34px;
+    }
+    &__slider {
+      margin-top: 14px;
+    }
+    &__list {
+      margin-top: 20px;
+    }
+    &__list-item {
+      &:nth-child(1n) {
+        & p {
+          padding-right: 0;
+        }
+      }
+      &:nth-child(2n) {
+        & p {
+          padding-right: 0;
+        }
+      }
+      &:nth-child(3n) {
+        & p {
+          padding-right: 0;
+        }
+      }
     }
   }
 
@@ -435,6 +519,16 @@
     }
   }
 
+  .contacts {
+    &__map {
+      width: 50%;
+    }
+    &__descr {
+      width: 50%;
+      padding: 57px 40px;
+    }
+  }
+
   .stock {
     & h2 {
       width: auto;
@@ -446,6 +540,8 @@
       width: 100%;
       padding: 0;
       text-align: center;
+      font-size: 17px;
+      line-height: normal;
     }
   }
 
@@ -561,6 +657,7 @@
         border-radius: 50px;
         margin-left: 35px;
         margin-right: 35px;
+        margin-bottom: 30px;
         position: relative;
         &:after {
           content: '';
@@ -590,6 +687,7 @@
         text-align: left;
         color: #084b92;
         padding: 10px 15px;
+        text-transform: capitalize;
         &_active {
           display: block;
           border: none;
@@ -619,20 +717,7 @@
           }
         }
       }
-      &__title {
-        position: relative;
-        text-decoration: underline;
-        &:after {
-          content: '';
-          display: inline-block;
-          width: 19px;
-          height: 19px;
-          background: url("../../img/icon-arrow-down.png") no-repeat 50% 50%;
-          position: relative;
-          top: 4px;
-          left: 15px;
-        }
-      }
+
       & .list {
         &__icons {
           display: flex;
@@ -640,7 +725,7 @@
         & .tabs-price {
           display: block;
         }
-        &.on {
+        /*&.on {
           & .tabs-block {
             &__title {
               &:after {
@@ -648,7 +733,7 @@
               }
             }
           }
-        }
+        }*/
       }
       & .tabs-price {
         margin-top: 0;
@@ -827,6 +912,7 @@
     padding: 20px 0;
     &__subtitle {
       font-size: 16px;
+      margin-bottom: 10px;
     }
     &__box {
       padding: 20px 0;
@@ -969,6 +1055,12 @@
     &__name {
       font-size: 16px;
     }
+    &__items {
+      box-shadow: none;
+      &:before {
+        bottom: -83px;
+      }
+    }
     &__item {
       padding: 20px;
     }
@@ -979,6 +1071,12 @@
         }
       }
     }
+    &__photo {
+      display: block;
+    }
+    &__img {
+      width: 100%;
+    }
   }
 
   .school .owl-theme .owl-dots {
@@ -986,13 +1084,20 @@
   }
 
   .stock {
-    padding: 20px 0;
+    padding: 20px 0 270px;
+    background-position: 21% 0;
+    & h2 {
+      line-height: normal;
+    }
+    &__items {
+      margin-top: 23px;
+    }
     &__item {
       display: flex;
       margin-bottom: 20px;
     }
     & p {
-      width: 80%;
+      width: 88%;
       padding-left: 20px;
       text-align: left;
       line-height: normal;
@@ -1017,7 +1122,7 @@
       }
     }
     &__list {
-      margin-top: auto;
+      margin-top: 20px;
     }
     &__mail {
       padding-left: 7px;
@@ -1035,7 +1140,6 @@
   .footer {
     padding: 20px 0 0 0;
     &__box {
-      display: block;
       & p {
         margin-bottom: 20px;
         font-size: 14px;
