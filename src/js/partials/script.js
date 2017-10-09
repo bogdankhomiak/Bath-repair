@@ -24,8 +24,24 @@ $(document).ready(function () {
         $(".slider-js-1").owlCarousel({
             items: 1
         });
+        var owl = $('.slider-js-1');
+        owl.owlCarousel();
+        $('.customNextBtn').click(function() {
+            owl.trigger('next.owl.carousel');
+        })
+        $('.customPrevBtn').click(function() {
+            owl.trigger('prev.owl.carousel', [300]);
+        });
         $(".slider-js-2").owlCarousel({
             items: 1
+        });
+        var owl = $('.slider-js-2');
+        owl.owlCarousel();
+        $('.customNextBtn2').click(function() {
+            owl.trigger('next.owl.carousel');
+        })
+        $('.customPrevBtn2').click(function() {
+            owl.trigger('prev.owl.carousel', [300]);
         });
 
     });
@@ -56,7 +72,21 @@ $(document).ready(function () {
         });
     });
     $(function () {
-        var sld = function() {
+        $(".list__all-btn").click(function () {
+            if ($(".tabs-block_primary .list").hasClass("close")) {
+                $(this).html('Скрыть полный перечень');
+                $(".close").addClass("open");
+                $(".close").removeClass("close");
+            }
+            else if ($(".list").hasClass("open")) {
+                $(this).html('Смотреть полный перечень');
+                $(".open").addClass("close");
+                $(".open").removeClass("open");
+            }
+        });
+    });
+    $(function () {
+        var sld = function () {
             if ($(window).width() <= 767) {
                 $(".slider-js-3").owlCarousel({
                     items: 1

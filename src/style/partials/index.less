@@ -440,7 +440,15 @@ ul {
   &__icons {
     display: flex;
     align-items: center;
-    margin: 8px 0px;
+    margin: 8px 0;
+  }
+  &__all-btn {
+    display: none;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(255, 173, 23);
+    text-transform: uppercase;
+    font-weight: 600;
   }
 }
 
@@ -477,6 +485,9 @@ ul {
     font-weight: bold;
     text-align: center;
     display: block;
+    &_mob {
+      display: none;
+    }
   }
 }
 
@@ -602,6 +613,10 @@ ul {
   &__btn {
     & .btn {
       padding: 17px 22px;
+      &:hover {
+        text-decoration: none;
+        color: #fff;
+      }
     }
   }
 }
@@ -1126,6 +1141,7 @@ ul {
 .school {
   padding: 73px 0 211px;
   background: #fff url("../img/img-bg-school.png") no-repeat 100% 0;
+  position: relative;
   & h2 {
     font-weight: 900;
   }
@@ -1166,6 +1182,15 @@ ul {
   &__list-item {
     display: flex;
     margin-bottom: 24px;
+    & p {
+      font-size: 18px;
+      font-family: "Open Sans", sans-serif;
+      color: rgb(0, 0, 0);
+      width: 390px;
+      padding-left: 30px;
+      line-height: 30px;
+
+    }
     &:last-child {
       margin-bottom: 0;
     }
@@ -1185,14 +1210,17 @@ ul {
       }
     }
   }
-  & p {
-    font-size: 18px;
-    font-family: "Open Sans", sans-serif;
-    color: rgb(0, 0, 0);
-    width: 390px;
-    padding-left: 30px;
-    line-height: 30px;
 
+  &__master-class {
+    position: absolute;
+    right: 21px;
+    bottom: 45px;
+    & p {
+      font-size: 18px;
+      font-family: "OpenSans", sans-serif;
+      color: rgb(255, 254, 254);
+      font-style: italic;
+    }
   }
 }
 
@@ -1233,7 +1261,8 @@ ul {
   &__items {
     display: flex;
     background-color: #fff;
-    margin-top: 59px;
+    margin: 40px 80px 0;
+    padding: 25px 35px;
   }
   &__item {
     text-align: center;
@@ -1242,7 +1271,7 @@ ul {
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
     color: rgb(0, 0, 0);
-    width: 240px;
+    width: 235px;
     margin-top: 33px;
     line-height: 20px;
   }
@@ -1314,5 +1343,44 @@ ul {
   &__link {
     text-decoration: underline;
     color: #fff;
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
   }
+}
+
+.customNextBtn, .customPrevBtn {
+  position: absolute;
+  width: 9px;
+  height: 15px;
+  z-index: 1;
+  bottom: 35px;
+}
+
+.customNextBtn {
+  background: url("../img/icon-slider-arrow-right-1.png") no-repeat 50% 50%;
+  right: 663px;
+}
+
+.customPrevBtn {
+  background: url("../img/icon-slider-arrow-left-1.png") no-repeat 50% 50%;
+  left: 354px;
+}
+.customNextBtn2, .customPrevBtn2 {
+  position: absolute;
+  width: 33px;
+  height: 60px;
+  z-index: 1;
+  bottom: -120px;
+}
+
+.customNextBtn2 {
+  background: url("../img/icon-slider-arrow-right-2.png") no-repeat 50% 50%;
+  right: 180px;
+}
+
+.customPrevBtn2 {
+  background: url("../img/icon-slider-arrow-left-2.png") no-repeat 50% 50%;
+  left: 180px;
 }
