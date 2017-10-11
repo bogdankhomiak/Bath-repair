@@ -9,6 +9,10 @@
   font-family: 'Open Sans', Arial, sans-serif;
 }
 
+:focus, a:focus {
+  outline: none;
+}
+
 p {
   margin: 0;
 }
@@ -206,9 +210,10 @@ ul {
     text-align: center;
     background-color: rgb(255, 46, 38);
     border-radius: 50px;
-    box-shadow: 0 5px 0 0 #ac201b;
+    box-shadow: 0 3px 0 0 #ac201b;
     padding: 14px 20px 19px;
     letter-spacing: 0.4px;
+    font-weight: 600;
   }
 }
 
@@ -317,6 +322,45 @@ ul {
   & .tabs-block {
     width: 33.33%;
   }
+  & .tabs-price {
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 17px;
+    align-items: center;
+    &__old {
+      font-size: 16px;
+      font-family: "Open Sans", sans-serif;
+      color: #6c6c6c;
+      margin-right: 30px;
+    }
+    &__old-value {
+      font-size: 18px;
+      font-weight: 600;
+      position: relative;
+      &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #fe3131;
+        position: absolute;
+        left: 0;
+        top: 13px;
+      }
+    }
+    &__new {
+      font-size: 24px;
+      font-family: "Open Sans", sans-serif;
+      color: rgb(17, 17, 17);
+      font-weight: bold;
+      text-align: center;
+      display: block;
+      &_mob {
+        display: none;
+      }
+    }
+  }
 }
 
 .slider {
@@ -359,7 +403,6 @@ ul {
 .tabs-block {
   background-color: rgb(244, 243, 243);
   padding: 30px;
-  //padding: 25px 30px 30px 39px;
   height: 628px;
   &__descr {
     padding: 26px 0 0 7px;
@@ -368,7 +411,6 @@ ul {
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
     color: rgb(17, 17, 17);
-    text-align: center;
     font-weight: 600;
   }
   & p {
@@ -402,6 +444,7 @@ ul {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        margin-right: 0;
       }
       &__new {
         font-size: 36px;
@@ -449,45 +492,6 @@ ul {
     color: rgb(255, 173, 23);
     text-transform: uppercase;
     font-weight: 600;
-  }
-}
-
-.tabs-price {
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 17px;
-  align-items: center;
-  &__old {
-    font-size: 16px;
-    font-family: "Open Sans", sans-serif;
-    color: #6c6c6c;
-  }
-  &__old-value {
-    font-size: 18px;
-    font-weight: 600;
-    position: relative;
-    &:before {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 1px;
-      background-color: #fe3131;
-      position: absolute;
-      left: 0;
-      top: 13px;
-    }
-  }
-  &__new {
-    font-size: 24px;
-    font-family: "Open Sans", sans-serif;
-    color: rgb(17, 17, 17);
-    font-weight: bold;
-    text-align: center;
-    display: block;
-    &_mob {
-      display: none;
-    }
   }
 }
 
@@ -1222,6 +1226,17 @@ ul {
       font-style: italic;
     }
   }
+  .owl-theme .owl-dots .owl-dot.active span {
+    background: #fff;
+  }
+  .owl-theme .owl-dots .owl-dot span {
+    height: 20px;
+    width: 20px;
+    box-sizing: border-box;
+    border: 3px solid #00499b;
+    background: #00499b;
+    margin: 5px;
+  }
 }
 
 .stock {
@@ -1324,7 +1339,7 @@ ul {
   }
   &__map {
     width: 56%;
-
+    background: url("../../img/img-map.png") 50% 50% no-repeat;
   }
 }
 
@@ -1356,6 +1371,7 @@ ul {
   height: 15px;
   z-index: 1;
   bottom: 35px;
+  cursor: pointer;
 }
 
 .customNextBtn {
@@ -1367,12 +1383,14 @@ ul {
   background: url("../img/icon-slider-arrow-left-1.png") no-repeat 50% 50%;
   left: 354px;
 }
+
 .customNextBtn2, .customPrevBtn2 {
   position: absolute;
   width: 33px;
   height: 60px;
   z-index: 1;
   bottom: -120px;
+  cursor: pointer;
 }
 
 .customNextBtn2 {
@@ -1384,3 +1402,42 @@ ul {
   background: url("../img/icon-slider-arrow-left-2.png") no-repeat 50% 50%;
   left: 180px;
 }
+
+/////////////
+
+/*
+.blue_count{
+  color: #fff;
+  display: inline-block;
+  background-color: #084b93;
+  padding: 3px 18px;
+  border-radius: 5px;
+  min-width: 60px;
+  max-width: 65px;
+  border: none!important;
+  outline: none;
+  text-align: center;
+}
+.inp_range_1{
+  outline: none;
+  display: inline-block;
+  -webkit-appearance: none;
+  width: 220px;
+  border-radius: 8px;
+  border: none!important;
+  height: 7px;
+  padding: 0;
+  background-color: #002357;
+}
+!* Special styling for WebKit/Blink *!
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #ff2e26;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; !* Add cool effects to your sliders! *!
+}
+
+*/

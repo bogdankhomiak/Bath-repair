@@ -26,10 +26,10 @@ $(document).ready(function () {
         });
         var owl = $('.slider-js-1');
         owl.owlCarousel();
-        $('.customNextBtn').click(function() {
+        $('.customNextBtn').click(function () {
             owl.trigger('next.owl.carousel');
         })
-        $('.customPrevBtn').click(function() {
+        $('.customPrevBtn').click(function () {
             owl.trigger('prev.owl.carousel', [300]);
         });
         $(".slider-js-2").owlCarousel({
@@ -37,10 +37,10 @@ $(document).ready(function () {
         });
         var owl = $('.slider-js-2');
         owl.owlCarousel();
-        $('.customNextBtn2').click(function() {
+        $('.customNextBtn2').click(function () {
             owl.trigger('next.owl.carousel');
         })
-        $('.customPrevBtn2').click(function() {
+        $('.customPrevBtn2').click(function () {
             owl.trigger('prev.owl.carousel', [300]);
         });
 
@@ -56,8 +56,10 @@ $(document).ready(function () {
         });
 
         $(".header-nav__link").click(function () {
-            $(".header-nav").fadeOut(0);
-            $(".icon__menu").toggleClass("active");
+            if ($(".header-nav-mob").is(":visible")) {
+                $(".header-nav").fadeOut(0);
+                $(".icon__menu").toggleClass("active");
+            }
         })
     });
     $(function () {
@@ -99,3 +101,78 @@ $(document).ready(function () {
         $(window).resize(sld);
     });
 });
+//////
+/*
+ function get_name_browser(){
+ var ua = navigator.userAgent;
+ if (ua.search(/.NET/) > 0) {
+ $('.inp_range_1').addClass('ie_range');
+ $('.inp_range_2').addClass('ie_range');
+ $('.page_global').css('font-family', 'Open Sans');
+ $('.page_success').css('font-family', 'Open Sans');
+ }
+ //CUSTOM INPUT (RANGE)
+ $('document').ready(function (){
+ function inp_1() {
+ var inp_val = $('.inp_range_1').val();
+ var inp_min = $('.inp_range_1').attr('min');
+ var inp_max = $('.inp_range_1').attr('max');
+ var inp_width = $('.inp_range_1').width();
+ var count = (((inp_width / (inp_max - inp_min)) * inp_val) / inp_width) * 100 - ((100 / (inp_max - inp_min)) * inp_min);
+ if (ua.search(/.NET/) < 0 && $('.inp_range_1').hasClass('test_input') == false) {
+ $('.inp_range_1').css('background', 'linear-gradient(to right, #084b93 0%, #084b93 ' + count + '%, #707070 ' + count + '%, #707070 100%)');
+ }
+ if (ua.search(/.NET/) < 0 && $('.inp_range_1').hasClass('test_input') == true) {
+ $('.inp_range_1').css('background', 'linear-gradient(to right, #fff 0%, #fff ' + count + '%, #ccc ' + count + '%, #ccc 100%)');
+ }
+ $('.bc_1').val(inp_val);
+ $('.bc_1').change(function (){
+ $('.inp_range_1').val($('.bc_1').val());
+ })
+ }
+ function inp_2() {
+ var inp_val = $('.inp_range_2').val();
+ var inp_min = $('.inp_range_2').attr('min');
+ var inp_max = $('.inp_range_2').attr('max');
+ var inp_width = $('.inp_range_2').width();
+ var count = (((inp_width / (inp_max - inp_min)) * inp_val) / inp_width) * 100 - ((100 / (inp_max - inp_min)) * inp_min);
+ if (ua.search(/.NET/) < 0 && $('.inp_range_2').hasClass('test_input') == false) {
+ $('.inp_range_2').css('background', 'linear-gradient(to right, #002357 0%, #002357 ' + count + '%, #ccc ' + count + '%, #ccc 100%)');
+ }
+ if (ua.search(/.NET/) < 0 && $('.inp_range_2').hasClass('test_input') == true) {
+ $('.inp_range_2').css('background', 'linear-gradient(to right, #fff 0%, #fff ' + count + '%, #ccc ' + count + '%, #ccc 100%)');
+ }
+ $('.bc_2').val(inp_val);
+ $('.bc_2').change(function (){
+ $('.inp_range_2').val($('.bc_2').val());
+ })
+ }
+ $('.bc_1').bind('click touch', function (){
+ $('.bc_1').val('');
+ });
+ $('.bc_2').bind('click touch', function (){
+ $('.bc_2').val('');
+ });
+ $(document).click(function(event) {
+ if ($(event.target).closest(".bc_1").length) return;
+ inp_1();
+ event.stopPropagation();
+ });
+ $(document).click(function(event) {
+ if ($(event.target).closest(".bc_2").length) return;
+ inp_2();
+ event.stopPropagation();
+ });
+ inp_1();
+ inp_2();
+ $('.bc_1').change(inp_1);
+ $('.bc_2').change(inp_2);
+ $('.inp_range_1').bind('mousemove click touchmove touchend', inp_1);
+ $('.inp_range_2').bind('mousemove click touchmove touchend', inp_2);
+ })
+ }
+ get_name_browser();
+ function validate(inp) {
+ inp.value = inp.value.replace(/[^\d,.]*!/g, '').replace(/([,.])[,.]+/g, '$1').replace(/^[^\d]*(\d+([.,]\d{0,5})?).*$/g, '$1');
+ }
+ */
