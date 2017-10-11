@@ -189,31 +189,31 @@ ul {
   &__bottom {
     background-color: #084b93;
     padding: 19px 25px 24px 37px;
-  }
-  & input {
-    width: 100%;
-    padding: 19px 30px;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 10px;
-    letter-spacing: -0.35px;
-  }
-  & input[placeholder] {
-    font-size: 16px;
-    font-family: "Open Sans", sans-serif;
-    color: rgb(89, 89, 89);
-  }
-  & input[type="submit"] {
-    font-size: 16px;
-    font-family: "Open Sans", sans-serif;
-    color: rgb(254, 254, 254);
-    text-align: center;
-    background-color: rgb(255, 46, 38);
-    border-radius: 50px;
-    box-shadow: 0 3px 0 0 #ac201b;
-    padding: 14px 20px 19px;
-    letter-spacing: 0.4px;
-    font-weight: 600;
+    & input {
+      width: 100%;
+      padding: 19px 30px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 10px;
+      letter-spacing: -0.35px;
+    }
+    & input[placeholder] {
+      font-size: 16px;
+      font-family: "Open Sans", sans-serif;
+      color: rgb(89, 89, 89);
+    }
+    & input[type="submit"] {
+      font-size: 16px;
+      font-family: "Open Sans", sans-serif;
+      color: rgb(254, 254, 254);
+      text-align: center;
+      background-color: rgb(255, 46, 38);
+      border-radius: 50px;
+      box-shadow: 0 3px 0 0 #ac201b;
+      padding: 14px 20px 19px;
+      letter-spacing: 0.4px;
+      font-weight: 600;
+    }
   }
 }
 
@@ -978,7 +978,7 @@ ul {
     position: relative;
     & p {
       font-size: 14px;
-      font-family: "OpenSans", sans-serif;
+      font-family: "Open Sans", sans-serif;
       color: rgb(17, 17, 17);
       text-align: center;
       font-weight: 300;
@@ -1221,7 +1221,7 @@ ul {
     bottom: 45px;
     & p {
       font-size: 18px;
-      font-family: "OpenSans", sans-serif;
+      font-family: "Open Sans", sans-serif;
       color: rgb(255, 254, 254);
       font-style: italic;
     }
@@ -1404,32 +1404,66 @@ ul {
 }
 
 /////////////
+.range-slider {
+  display: flex;
+  margin-top: 11px;
+  &__value {
+    background-color: #084b93;
+    padding: 5px 25px 5px 7px;
+    border-radius: 5px;
+    width: 60px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+  }
+  &__input {
+    position: relative;
+    margin-right: 14px;
 
-/*
-.blue_count{
-  color: #fff;
-  display: inline-block;
-  background-color: #084b93;
-  padding: 3px 18px;
-  border-radius: 5px;
-  min-width: 60px;
-  max-width: 65px;
-  border: none!important;
-  outline: none;
-  text-align: center;
+  }
+  &__span {
+    position: absolute;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    top: 5px;
+    right: 5px;
+  }
+  &__scale {
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    height: 7px;
+    padding: 0;
+    background-color: #002357;
+    position: relative;
+    top: 4px;
+    z-index: 0;
+    &:after {
+      content: '';
+      display: block;
+      width: 97%;
+      left: 7px;
+      position: absolute;
+      height: 19px;
+      top: 8px;
+      right: 0;
+      background: url(../img/icon-range-slider.png) 50% 50% no-repeat;
+      background-size: contain;
+      z-index: -1;
+    }
+  }
 }
-.inp_range_1{
-  outline: none;
-  display: inline-block;
-  -webkit-appearance: none;
-  width: 220px;
-  border-radius: 8px;
-  border: none!important;
-  height: 7px;
-  padding: 0;
-  background-color: #002357;
-}
-!* Special styling for WebKit/Blink *!
+
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 18px;
@@ -1437,7 +1471,6 @@ input[type=range]::-webkit-slider-thumb {
   border-radius: 50%;
   background: #ff2e26;
   cursor: pointer;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; !* Add cool effects to your sliders! *!
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.15);
+  z-index: 999;
 }
-
-*/
