@@ -25,7 +25,8 @@ $(document).ready(function () {
     //SLIDER 2
     $(function () {
         $(".slider-js-2").owlCarousel({
-            items: 1
+            items: 1,
+            nav: false
         });
         var owl = $('.slider-js-2');
         owl.owlCarousel();
@@ -82,6 +83,12 @@ $(document).ready(function () {
         });
     });
     $(function () {
+        $(".portfolio__name").click(function () {
+            $(".portfolio__name").not(this).removeClass("on");
+            $(this).toggleClass("on");
+        });
+    });
+    $(function () {
         $(".list__all-btn").click(function () {
             if ($(".tabs-block_primary .list").hasClass("close")) {
                 $(this).html('Скрыть полный перечень');
@@ -95,7 +102,7 @@ $(document).ready(function () {
             }
         });
     });
-    //CUSTOM INPUT (RANGE)
+    //INPUT RANGE
     $(function () {
         function inpScale() {
             var inpValue = $('.range-slider__scale').val();
@@ -128,18 +135,13 @@ $(document).ready(function () {
     $(function () {
         $(function () {
             $(".scroll").on("click touch", "a", function (event) {
-                //отменяем стандартную обработку нажатия по ссылке
                 event.preventDefault();
-                //забираем идентификатор бока с атрибута href
                 var id = $(this).attr('href'),
-                    //узнаем высоту от начала страницы до блока на который ссылается якорь
                     top = $(id).offset().top - 80;
-                //alert(top)
                 var head_height = String(Number($('.header-top').css('height').substring(0, $('.header-top').css('height').length - 2)))
                 if (w_d <= 767) {
                     top = $(id).offset().top - head_height + 1;
                 }
-                //анимируем переход на расстояние - top за 1500 мс
                 $('body,html').animate({scrollTop: top}, 1000);
             });
         });

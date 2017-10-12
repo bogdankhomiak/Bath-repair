@@ -95,7 +95,7 @@
   }
 
   .customNextBtn, .customPrevBtn {
-    bottom: 274px;
+    bottom: 364px;
   }
 
   .customNextBtn {
@@ -104,6 +104,14 @@
 
   .customPrevBtn {
     left: 409px;
+  }
+
+  .customPrevBtn2 {
+    left: 62px;
+  }
+
+  .customNextBtn2 {
+    right: 662px;
   }
 
   .features {
@@ -201,7 +209,8 @@
   }
 
   .school {
-
+    background-image: none;
+    padding: 0;
     &__list-item {
       & p {
         width: 350px;
@@ -424,7 +433,7 @@
   }
 
   .customNextBtn, .customPrevBtn {
-    bottom: 279px;
+    bottom: 364px;
   }
 
   .customNextBtn {
@@ -436,11 +445,11 @@
   }
 
   .customNextBtn2, .customPrevBtn2 {
-    bottom: -77px;
+    bottom: -2px;
   }
 
   .customNextBtn2 {
-    right: 105px;
+    right: 425px;
   }
 
   .customPrevBtn2 {
@@ -534,16 +543,14 @@
   }
 
   .school {
-    background-image: url("../img/img-bg-school-table.png");
-    background-position: 143% 0;
-    padding-top: 58px;
-    padding-bottom: 93px;
+    padding: 0;
     &__name {
       font-size: 18px;
       line-height: 22px;
     }
-
     &__items {
+      width: 390px;
+      top: 136px;
       &:before {
         bottom: -70px;
       }
@@ -552,7 +559,7 @@
       padding: 25px 35px 24px 34px;
     }
     &__slider {
-      margin-top: 14px;
+      margin-top: 0;
     }
     &__list {
       margin-top: 20px;
@@ -586,6 +593,11 @@
         width: 310px;
       }
     }
+  }
+
+  .school .owl-theme .owl-dots {
+    left: -160px;
+    bottom: 8px;
   }
 
   .trust {
@@ -877,6 +889,7 @@
       padding-left: 20px;
       padding-right: 20px;
       padding-bottom: 20px;
+      height: auto;
     }
     &__btn {
       position: static;
@@ -903,9 +916,26 @@
         display: block;
       }
     }
+    & .owl-theme {
+      & .owl-dots {
+        bottom: 3px;
+      }
+    }
   }
 
-  .customNextBtn, .customPrevBtn, .customNextBtn2, .customPrevBtn2 {
+  .customNextBtn, .customPrevBtn {
+    bottom: 492px;
+  }
+
+  .customPrevBtn {
+    left: 26%;
+  }
+
+  .customNextBtn {
+    right: 26%;
+  }
+
+  .customNextBtn2, .customPrevBtn2 {
     display: none;
   }
 
@@ -1135,7 +1165,7 @@
       }
     }
     &__feadback {
-      padding: 20px;
+      padding: 20px 0;
       & p {
         text-align: center;
       }
@@ -1246,7 +1276,9 @@
   .school {
     background: #fff;
     padding: 20px 0 60px;
-
+    & h2 {
+      position: static;
+    }
     & p {
       font-size: 14px;
       padding-left: 10px;
@@ -1258,12 +1290,14 @@
     }
     &__items {
       box-shadow: none;
+      position: static;
+      width: 100%;
       &:before {
         bottom: -83px;
       }
     }
     &__item {
-      padding: 20px;
+      padding: 20px 0;
     }
     &__list-item {
       &:nth-child(1n), &:nth-child(2n), &:nth-child(3n) {
@@ -1278,10 +1312,29 @@
     &__img {
       width: 100%;
     }
+    &__master-class {
+      display: none;
+    }
+    &__slider {
+      padding: 0 10px;
+    }
   }
 
   .school .owl-theme .owl-dots {
     bottom: -47px;
+    left: 0;
+  }
+
+  .school .owl-carousel .owl-item img {
+    display: none;
+  }
+
+  .school .owl-carousel .owl-item img.school__img_mob {
+    display: block;
+    height: auto;
+    width: 100%;
+    float: none;
+    position: static;
   }
 
   .stock {
@@ -1381,6 +1434,10 @@
         font-size: 21px;
       }
     }
+  }
+
+  .modal-dialog {
+    margin: 0;
   }
 
   input[placeholder] {

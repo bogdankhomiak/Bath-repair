@@ -561,7 +561,6 @@ ul {
     padding-top: 3px;
     padding-bottom: 7px;
   }
-
   &__item {
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
@@ -569,11 +568,20 @@ ul {
     display: flex;
     line-height: 26px;
     padding-left: 5px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
   }
   &__bottom {
     background-color: #f4f3f3;
     padding: 9px 35px 15px 40px;
+    height: 329px;
+    overflow: hidden;
+    & p {
+      overflow-y: scroll;
+      max-height: 144px;
+    }
+    & .list {
+      margin-bottom: 5px;
+    }
     &__link {
       &:after {
         right: 85px;
@@ -581,15 +589,25 @@ ul {
     }
     & .portfolio {
       &__name {
+        cursor: pointer;
         &:after {
           content: '';
           display: block;
-          width: 19px;
-          height: 11px;
-          background: url("../img/icon-arrow-down.png") no-repeat;
+          width: 11px;
+          height: 19px;
+          background: url("../img/icon-arrow-right.png") no-repeat;
           position: absolute;
-          right: -27px;
-          top: 8px;
+          right: -22px;
+          top: 4px;
+        }
+        &.on {
+          &:after {
+            background: url("../img/icon-arrow-down.png") no-repeat;
+            width: 19px;
+            height: 11px;
+            top: 8px;
+            right: -27px;
+          }
         }
       }
     }
@@ -614,6 +632,7 @@ ul {
     }
   }
   &__btn {
+    margin-top: 9px;
     & .btn {
       padding: 17px 22px;
       &:hover {
@@ -1142,14 +1161,15 @@ ul {
 }
 
 .school {
-  padding: 73px 0 211px;
-  background: #fff url("../img/img-bg-school.png") no-repeat 100% 0;
+  /*padding: 73px 0 211px;*/
+  /*background: #fff url("../img/img-bg-school.png") no-repeat 100% 0;*/
+  background-color: #fff;
   position: relative;
   & h2 {
     font-weight: 900;
   }
   &__slider {
-    margin-top: 70px;
+    /* margin-top: 70px;*/
   }
   &__items {
     box-shadow: 2.47px 7.61px 24px 0 rgba(49, 49, 49, .16);
@@ -1180,7 +1200,8 @@ ul {
     margin-top: 36px;
   }
   &__photo {
-    display: none;
+    display: block;
+    float: right;
   }
   &__list-item {
     display: flex;
@@ -1552,7 +1573,7 @@ input[type=range]::-webkit-slider-thumb {
     font-weight: 600;
     margin: 25px;
     text-align: center;
-    &_small{
+    &_small {
       font-size: 31px;
     }
   }
@@ -1567,9 +1588,9 @@ input[type=range]::-webkit-slider-thumb {
 
 .modal-dialog {
   max-width: 450px;
-  margin: 0;
 }
-.modal-content{
+
+.modal-content {
   border: none;
   border-radius: 0;
 }
@@ -1604,4 +1625,111 @@ input[type="submit"] {
   padding: 14px 20px 19px;
   letter-spacing: 0.4px;
   font-weight: 600;
+}
+
+.portfolio__name + .list {
+  display: none;
+}
+
+.portfolio__name.on + .list {
+  display: block;
+}
+
+.customPrevBtn2, .customNextBtn2 {
+  bottom: 140px;
+}
+
+.customPrevBtn2 {
+  left: 162px;
+}
+
+.customNextBtn2 {
+  right: 762px;
+}
+
+.school {
+  & h2 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 72px;
+  }
+  & .owl-theme .owl-dots {
+    text-align: center;
+    left: -300px;
+    bottom: 150px;
+  }
+  & .owl-carousel .owl-item img {
+    display: block;
+    float: right;
+    height: 920px;
+    width: auto;
+  }
+  &__items {
+    position: absolute;
+    top: 192px;
+    width: 570px;
+    &:before {
+      display: none;
+    }
+  }
+}
+
+/*@media (max-width: 1199px) {
+  .school {
+    background-image: none !important;
+    padding: 0 !important;
+  }
+  .customPrevBtn2 {
+    left: 62px;
+  }
+
+  .customNextBtn2 {
+    right: 662px;
+  }
+}*/
+
+@media (max-width: 991px) {
+  .school {
+    & .owl-carousel .owl-item img {
+      height: 600px;
+      position: relative;
+      right: -15%;
+    }
+    &__items {
+      width: 390px;
+    }
+    &__slider {
+      margin-top: 0;
+    }
+  }
+}
+
+.school .owl-carousel .owl-item img.school__img_mob {
+  display: none;
+}
+
+@media (max-width: 767px) {
+
+
+
+
+  .school__master-class {
+    display: none;
+  }
+
+  .school__items {
+
+  }
+
+  .school {
+    & h2 {
+
+    }
+  }
+}
+
+.btns-slider {
+  position: relative;
+
 }
