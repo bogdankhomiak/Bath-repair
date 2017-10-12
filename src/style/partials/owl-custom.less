@@ -1,25 +1,76 @@
-.portfolio{
-  .owl-theme .owl-dots {
+.portfolio {
+  & .owl-theme .owl-dots {
     position: absolute;
     bottom: 25px;
     width: 100%;
   }
 }
 
-.school{
-  .owl-theme .owl-dots {
+.school {
+  & .owl-theme .owl-dots {
     position: absolute;
-    /*bottom: -111px;*/
     bottom: 111px;
     width: 100%;
   }
+  & .owl-theme .owl-dots .owl-dot.active span {
+    background: #fff;
+  }
+  & .owl-theme .owl-dots .owl-dot span {
+    height: 20px;
+    width: 20px;
+    box-sizing: border-box;
+    border: 3px solid #00499b;
+    background: #00499b;
+    margin: 5px;
+  }
+  & .owl-carousel .owl-item img.school__img_mob {
+    display: none;
+  }
+  & .owl-theme .owl-dots {
+    text-align: center;
+    left: -300px;
+    bottom: 150px;
+  }
+  & .owl-carousel .owl-item img {
+    display: block;
+    float: right;
+    height: 920px;
+    width: auto;
+  }
 }
+
 @media (max-width: 991px) {
-  .school{
-    .owl-theme .owl-dots {
+  .school {
+    & .owl-theme .owl-dots {
       position: absolute;
-      bottom: -65px;
       width: 100%;
+      left: -160px;
+      bottom: 30px;
+    }
+    & .owl-carousel .owl-item img {
+      height: 600px;
+      position: relative;
+      right: -15%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .school {
+    & .owl-theme .owl-dots {
+      bottom: -47px;
+      left: 0;
+    }
+    & .owl-carousel .owl-item img {
+      display: none;
+    }
+    & .owl-carousel .owl-item img.school__img_mob {
+      display: block;
+      height: auto;
+      width: 100%;
+      float: none;
+      position: static;
+      margin-top: 10px;
     }
   }
 }
