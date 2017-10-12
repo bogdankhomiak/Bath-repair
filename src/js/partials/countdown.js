@@ -34,7 +34,7 @@ CountdownTimer.prototype = {
 function countdown() {
 
     // Set countdown limit
-    var tl = new Date('2017/10/15 00:00:00');
+    var tl = new Date('2017/10/27 00:00:00');
 
     // You can add time's up message here
     var timer = new CountdownTimer('countdown', tl, '<span class="number-wrapper"><span class="number end">Акция закончилась</span></span>');

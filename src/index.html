@@ -31,7 +31,9 @@
             <div class="header-contacts">
                 <a href="tel:+74951276018" class="header-contacts__tel">+7 (495) 127-60-18 </a>
                 <span class="header-contacts__span">Ежедневно с 08:00 до 22:00</span>
-                <a href="tel:+74951276018" class="header-contacts__feedback">Заказать звонок</a>
+                <button class="header-contacts__feedback" data-target="#modal-feadback" data-toggle="modal">Заказать
+                    звонок
+                </button>
             </div>
             <div class="header-nav-mob">
                 <div class="icon icon__menu"></div>
@@ -132,7 +134,8 @@
                     <p>Площадь квартиры</p>
                     <div class="range-slider">
                         <div class="range-slider__input">
-                            <input class="range-slider__value rangeValue" type="text" min="1" max="10" onkeyup="validate(this)">
+                            <input class="range-slider__value rangeValue" type="text" min="1" max="10"
+                                   onkeyup="validate(this)">
                             <span class="range-slider__span">м<sup>2</sup></span>
                         </div>
                         <input class="range-slider__scale" type="range" min="1" max="10" step="0.1" value="5.5">
@@ -363,7 +366,9 @@
                             <span class="tabs-price__new"><span class="tabs-price__new_mob">Стоимость работ</span> от 20 950 руб./м<sup>2</sup></span>
                         </div>
                         <div class="tabs__btn">
-                            <a href="#" class="btn">Рассчитать ремонт</a>
+                            <button class="btn tabs-block__calculate" data-target="#modal-calculate"
+                                    data-toggle="modal">Рассчитать ремонт
+                            </button>
                         </div>
                     </div>
                     <div class="tabs-block tabs-block_absolute">
@@ -496,7 +501,9 @@
                             </div>
                             <a href="#" class="portfolio__link">Читать отзыв</a>
                             <div class="portfolio__btn">
-                                <a href="#" class="btn">Рассчитать стоимость</a>
+                                <button class="btn tabs-block__calculate" data-target="#modal-calculate"
+                                        data-toggle="modal">Рассчитать стоимость
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -1277,11 +1284,42 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__box">
-            <p>&copy;2012-2017 “Московский ремонтник” <a href="legal.html" class="footer__link">Правовая информация</a></p>
+            <p>&copy;2012-2017 “Московский ремонтник” <a href="legal.html" class="footer__link">Правовая информация</a>
+            </p>
             <p>Сайт не является публичной офертой и носит информационный характер</p>
         </div>
     </div>
 </footer>
+<div class="modal fade" id="modal-feadback">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="modal__close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal__title">Закажите обратный звонок</h4>
+            </div>
+            <div class="modal-body">
+                <input class="modal__input" type="text" placeholder="Введите Ваше имя...">
+                <input class="modal__input" type="tel" placeholder="Введите номер телефона...">
+                <input name="enter" type="submit" class="modal__send" value="Отправить">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-calculate">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="modal__close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal__title modal__title_small">Перезвоним в течение 3-х минут, бесплатно проконсультируем!</h4>
+            </div>
+            <div class="modal-body">
+                <input class="modal__input" type="text" placeholder="Введите Ваше имя...">
+                <input class="modal__input" type="tel" placeholder="Введите номер телефона...">
+                <input name="enter" type="submit" class="modal__send" value="Отправить">
+            </div>
+        </div>
+    </div>
+</div>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
