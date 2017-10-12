@@ -47,6 +47,11 @@ h3 {
 
 a {
   text-decoration: none;
+  transition: 0.3s;
+  &:hover, &:focus {
+    color: #ffad17;
+    text-decoration: none;
+  }
 }
 
 ul {
@@ -81,6 +86,10 @@ input[type="submit"] {
   padding: 14px 20px 19px;
   letter-spacing: 0.4px;
   font-weight: 600;
+  &:hover {
+    box-shadow: 0 0 10px 3px #ff2e26, 0 5px 0 0 #ac201b;
+    transition: 0.3s;
+  }
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -182,6 +191,11 @@ input[type=range]::-webkit-slider-thumb {
     display: block;
     background: transparent;
     border: none;
+    &:hover {
+      text-decoration: none;
+      transition: 0.3s;
+
+    }
   }
 }
 
@@ -485,6 +499,11 @@ input[type=range]::-webkit-slider-thumb {
     text-align: center;
     cursor: pointer;
     margin: 0 19px;
+    transition: 0.3s;
+    &:hover {
+      border-bottom: 3px solid #fff;
+      transition: 0.3s;
+    }
     &_active {
       display: block;
       border-bottom: 3px solid #fff;
@@ -604,6 +623,10 @@ input[type=range]::-webkit-slider-thumb {
   display: inline-block;
   font-weight: bold;
   border: none;
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 0 3px 10px 3px #ff2e26, 0 5px 0 0 #ac201b;
+  }
 }
 
 .portfolio {
@@ -651,6 +674,7 @@ input[type=range]::-webkit-slider-thumb {
     font-weight: 600;
     letter-spacing: 0;
     margin-bottom: 3px;
+    margin-right: 50px;
     & + .list {
       display: none;
     }
@@ -1275,7 +1299,8 @@ input[type=range]::-webkit-slider-thumb {
     width: 100%;
     top: 72px;
   }
-  &__slider {
+  &__slider-item {
+    overflow: hidden;
   }
   &__items {
     box-shadow: 2.47px 7.61px 24px 0 rgba(49, 49, 49, .16);
@@ -1291,7 +1316,7 @@ input[type=range]::-webkit-slider-thumb {
       position: absolute;
       bottom: -55px;
       left: 0;
-      background: url(../../img/img-shadow.png) no-repeat;
+      background: url(../img/img-shadow.png) no-repeat;
       background-size: contain;
       z-index: -1;
 
@@ -1463,7 +1488,7 @@ input[type=range]::-webkit-slider-thumb {
   }
   &__map {
     width: 56%;
-    background: url("../../img/img-map.png") 50% 50% no-repeat;
+    background: url("../img/img-map.png") 50% 50% no-repeat;
   }
 }
 
@@ -1483,7 +1508,7 @@ input[type=range]::-webkit-slider-thumb {
     text-decoration: underline;
     color: #fff;
     &:hover {
-      color: #fff;
+      color: #ffad17;
       text-decoration: none;
     }
   }
@@ -1579,7 +1604,7 @@ input[type=range]::-webkit-slider-thumb {
   }
 }
 
-/////Legal eND//////
+/////Legal END//////
 
 .navbar-fixed-top {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);

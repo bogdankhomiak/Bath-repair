@@ -12,7 +12,7 @@
 <body>
 <header class="header header_legal">
     <div class="container">
-        <div class="header-top">
+        <div class="header-top default">
             <div class="logotype">
                 <a href="#" class="logotype__link">
                     <img src="img/img-logo.png" alt="logotype" class="logotype__img">
@@ -20,18 +20,20 @@
                 </a>
             </div>
             <nav class="header-nav">
-                <ul class="header-nav__items">
-                    <li class="header-nav__item"><a href="#portfolio" class="header-nav__link">Портфолио</a></li>
-                    <li class="header-nav__item"><a href="#price" class="header-nav__link">Услуги</a></li>
-                    <li class="header-nav__item"><a href="#warm-flor" class="header-nav__link">Акция</a></li>
-                    <li class="header-nav__item"><a href="#header-calculator" class="header-nav__link">Калькулятор</a>
+                <ul class="header-nav__items scroll">
+                    <li class="header-nav__item"><a href="index.html/#portfolio" class="header-nav__link">Портфолио</a></li>
+                    <li class="header-nav__item"><a href="index.html/#price" class="header-nav__link">Услуги</a></li>
+                    <li class="header-nav__item"><a href="index.html/#warm-flor" class="header-nav__link">Акция</a></li>
+                    <li class="header-nav__item"><a href="index.html/#header-calculator" class="header-nav__link">Калькулятор</a>
                     </li>
                 </ul>
             </nav>
             <div class="header-contacts">
                 <a href="tel:+74951276018" class="header-contacts__tel">+7 (495) 127-60-18 </a>
                 <span class="header-contacts__span">Ежедневно с 08:00 до 22:00</span>
-                <a href="tel:+74951276018" class="header-contacts__feedback">Заказать звонок</a>
+                <button class="header-contacts__feedback" data-target="#modal-feadback" data-toggle="modal">Заказать
+                    звонок
+                </button>
             </div>
             <div class="header-nav-mob">
                 <div class="icon icon__menu"></div>
